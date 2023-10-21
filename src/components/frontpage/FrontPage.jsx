@@ -211,33 +211,32 @@ export default function FrontPage() {
 
 
 			{/* Hero section */}
-			<div className="relative h-96 bg-gray-900">
+			<div className="relative h-screen bg-gray-900">
 				{/* Decorative image and overlay */}
 				<div aria-hidden="true" className="absolute inset-0 overflow-hidden">
-					<img
-						src="/ImagesCadeteSiempre/bannerVenezuelaJose.png"
+					<Image
+						src="/portadacatalogo2.jpg"
 						alt=""
 						className="h-full w-full object-cover object-center"
+						width={1000}
+						height={1000}
 					/>
 				</div>
 				<div aria-hidden="true" className="absolute inset-0 bg-gray-900 opacity-50" />
-				<div className="relative mx-auto flex max-w-3xl flex-col items-center px-6  text-center sm:py-16 lg:px-0">
-					<h1 className="text-4xl font-bold tracking-tight text-white lg:text-6xl">¡Compra tus botones o trajes en un solo lugar!</h1>
-					<p className="mt-4 text-xl text-white">
-						¡Disponemos de toda la indumentaria para tus promociones!.
-					</p>
-					<button
-						onClick={()=>router.push(ROUTER_PATH.PRODUCTS)}
-						className="mt-8 inline-block rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100"
-					>
-						Comprar
-					</button>
+				<div className="relative mx-auto h-screen w-full flex  flex-col items-center justify-center px-6  text-center sm:py-16 lg:px-60">
+					<Image
+						src="/logovolumetricoBlanco.png"
+						alt=""
+						className="h-full w-full  object-center"
+						width={1000}
+						height={1000}
+					/>
 				</div>
 			</div>
 
 			<main>
 				{/* Category section */}
-				<section  className="hidden bg-white shadow-md rounded-t-md  mt-10 pt-24 sm:pt-32 lg:block xl:mx-auto xl:h-auto xl:max-w-7xl xl:px-8">
+				{/* <section  className="hidden bg-white shadow-md rounded-t-md  mt-10 pt-24 sm:pt-32 lg:block xl:mx-auto xl:h-auto xl:max-w-7xl xl:px-8">
 					<div className="px-4 text-center w-full sm:flex sm:items-center sm:justify-center sm:px-6 lg:px-8 xl:px-0">
 						<h2 id="category-heading" className="text-2xl font-bold tracking-tight text-gray-900">
 							Academias
@@ -279,7 +278,7 @@ export default function FrontPage() {
 											<span className="relative mt-auto text-center text-xl font-bold text-white">{category.name}</span>
 										</button>
 									))}
-									{/* <AcademyComponent/> */}
+									
 								</div>
 								<div className=' hidden lg:flex w-full justify-center'>
 									<button className='text-blue-700 hover:text-blue-400 mt-5 inline-block rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium  hover:bg-gray-100' onClick={() => setShowAll(prev => !prev)}>{showAll ? 'Cerrar' : 'Ver todas las Academias'}</button>
@@ -287,8 +286,8 @@ export default function FrontPage() {
 							</div>
 						</div>
 					</div>
-				</section>
-				<section  className=" bg-white shadow-md rounded-t-md  mt-10 pt-24 sm:pt-32 lg:hidden ">
+				</section> */}
+				{/* <section  className=" bg-white shadow-md rounded-t-md  mt-10 pt-24 sm:pt-32 lg:hidden ">
 					<div className="px-4 text-center w-full sm:flex sm:items-center sm:justify-center sm:px-6 lg:px-8 xl:px-0">
 						<h2 id="category-heading" className="text-2xl font-bold tracking-tight text-gray-900">
 							Academias
@@ -320,7 +319,7 @@ export default function FrontPage() {
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> */}
 
 				{/* Featured section */}
 				<section

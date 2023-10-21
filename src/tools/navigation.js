@@ -8,6 +8,6 @@ export const mainNavigation = [
 ]
 
 export const secondaryNavigation = [
-    { name:'Consultar', href:ROUTER_PATH.SEARCH, className:"hidden text-sm font-medium text-white lg:block" },
+    { name:'Productos', href:ROUTER_PATH.PRODUCTS, className:"hidden text-sm font-medium text-white lg:block" },
     { name:'Sobre Nosotros', href:ROUTER_PATH.ABOUT, className:"hidden text-sm font-medium text-white lg:block" }
 ]

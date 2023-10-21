@@ -7,6 +7,8 @@ import { mainNavigation, secondaryNavigation } from '@/tools/navigation';
 import MovilMenu from './MovilMenu';
 import { getUser, isAuthenticated } from '@/tools/actions';
 import { ROUTER_ID, ROUTER_PATH } from '@/tools/constants';
+import Image from 'next/image';
+import logoEspiral from '../../../public/logoespirales.png'
 
 export default async function CustomHeader() {
 
@@ -30,25 +32,31 @@ export default async function CustomHeader() {
         return item
     })
 
-    return <header className="relative z-10 bg-black">
+    return <header className="relative z-10 bg-azulPantone">
         <nav aria-label="Top">
-            <div className="bg-white bg-opacity-10 backdrop-blur-md backdrop-filter">
+            <div className=" bg-azulPantone">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div>
                         <div className="flex h-16 items-center justify-between">
                             <div className="hidden lg:flex lg:flex-1 lg:items-center">
-                                <Link href="/">
-                                    <span className="text-lg font-bold text-white">CadeteSiempre</span>
+                                <Link className='flex items-center gap-2' href="/">
+                                    <Image 
+                                        src={logoEspiral}
+                                        width={50}
+                                        height={50}
+                                        alt=''
+                                    />
+                                    <span className="text-lg font-bold text-white uppercase">Corpoelec Industrial</span>
                                 </Link>
                             </div>
 
-                            <div className="hidden h-full lg:flex">
+                            {/* <div className="hidden h-full lg:flex">
                                 <div className="inset-x-0 bottom-0 px-4">
                                     <div className="flex h-full justify-center space-x-8">
                                         <MenuNav navigation={mainNav} />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="flex flex-1 items-center lg:hidden">
                                 <MovilMenu />
@@ -61,9 +69,9 @@ export default async function CustomHeader() {
                                     </svg>
                                 </Link>
                                 <MenuNav navigation={secondaryNavigation} />
-                                <div className="ml-4 flow-root lg:ml-8">
+                                {/* <div className="ml-4 flow-root lg:ml-8">
                                     <ButtonCart />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
