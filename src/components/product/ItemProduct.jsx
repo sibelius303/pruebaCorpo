@@ -4,13 +4,13 @@ import Link from 'next/link';
 export default function ItemProduct({ product }) {
 
     return <Link href={`/productos/${product.id}`} className="group bg-white rounded-xl shadow hover:shadow-2xl flex md:block cursor-pointer">
-        <div className="block p-2 aspect-h-1 aspect-w-1 w-full overflow-hidden bg-white xl:aspect-h-8 xl:aspect-w-7 border-b-2 border-b-lightgray rounded-tl-xl rounded-bl-xl md:rounded-tr-xl md:rounded-bl-none">
+        <div className="block p-2 h-auto overflow-hidden bg-white xl:aspect-h-8 xl:aspect-w-7 border-b-2 border-b-lightgray rounded-tl-xl rounded-bl-xl md:rounded-tr-xl md:rounded-bl-none">
             <Image
                 src={product.images?.at(0)?.src}
                 alt={product.images?.at(0)?.alt}
                 width={500}
                 height={500}
-                className="h-full w-full object-cover object-center rounded-tl-xl rounded-bl-xl md:rounded-tr-xl md:rounded-bl-none"
+                className="w-full md:h-[35vh] h-[20vh] object-cover object-center rounded-tl-xl rounded-bl-xl md:rounded-tr-xl md:rounded-bl-none"
             />
         </div>
         <div className="flex flex-col justify-between px-3 pb-4 ">
