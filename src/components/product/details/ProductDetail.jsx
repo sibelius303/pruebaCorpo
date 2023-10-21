@@ -1,7 +1,4 @@
 import ImageSelector from './ImageSelector';
-import AddToCart from '../AddToCart'
-import BuyNow from '../BuyNow'
-import Price from '../Price';
 import Details from './Details';
 import CardRelatedProduct from '../../CardRelatedProduct';
 import HeartButton from '../HeartButton';
@@ -13,7 +10,7 @@ export default function ProductDetail({ product }) {
 
 	return (
 		<div>
-			<main className="mx-auto max-w-7xl bg-white sm:px-12 sm:pt-20 lg:px-16">
+			<main className="mx-auto max-w-7xl bg-white sm:px-12 pt-10 sm:pt-20 lg:px-16">
 				<div className="mx-auto max-w-2xl lg:max-w-none">
 					{/* Product */}
 					<div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 border-b-2 border-gray-400 pb-3">
@@ -23,11 +20,6 @@ export default function ProductDetail({ product }) {
 						{/* Product info */}
 						<div className="mt-4 md:mt-0 px-5 pt-8 bg-white">
 							<h1 className="text-3xl font-bold tracking-tight text-gray-900">{product.name}</h1>
-
-							<div className="mt-3">
-								<h2 className="sr-only">Product information</h2>
-								<Price price={product.price} regularPrice={product.regularPrice} />
-							</div>
 
 							<div className="mt-6">
 								<h3 className="sr-only">Description</h3>
@@ -39,15 +31,6 @@ export default function ProductDetail({ product }) {
 
 							<form className="mt-6">
 								<div className="mt-10 flex gap-2">
-									<AddToCart
-										id={product.id}
-										enableCount
-										classNameIcon="text-blue-400 w-5"
-										classNameContainer="p-3 text-blue-400 border-2 border-blue-400 rounded-md hover:text-blue-500 hover:bg-blue-100"
-									/>
-									<BuyNow
-										id={product.id}
-										className="p-3 text-blue-400 border-2 border-blue-400 rounded-md hover:text-blue-500 hover:bg-blue-100"/>
 									<HeartButton
 										id={product.id}
 										className="p-3 text-blue-400 border-2 border-blue-400 rounded-md hover:text-blue-500 hover:bg-blue-100"/>

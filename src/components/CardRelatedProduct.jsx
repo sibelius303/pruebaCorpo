@@ -1,5 +1,4 @@
 import Price from "./product/Price"
-import AddToCart from "./product/AddToCart"
 
 export default function CardRelatedProduct({product}) {
 
@@ -14,12 +13,6 @@ export default function CardRelatedProduct({product}) {
             </div>
             <div className="relative mt-4 flex flex-row gap-2 items-center md:flex-col md:items-start">
                 <h3 className="text-sm font-medium text-gray-900 w-1/2 md:w-full">{product.name}</h3>
-                <AddToCart
-                    id={product.id}
-                    label="Agregar al Carrito"
-                    classNameContainer="p-3 w-1/2 md:w-full text-blue-400 border-2 border-blue-400 rounded-md hover:text-blue-500 hover:bg-blue-100"
-                />
-                
             </div>
             <div className="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                 <div
