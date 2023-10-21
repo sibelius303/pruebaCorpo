@@ -20,9 +20,6 @@ export const products = [
             alt: '',
         }],
         description: `Son Transformadores monofásicos de distribución tipo Intemperie sumergido en Aceite liquido dieléctrico, con una Potencia Nominal desde 10 KVA hasta 100 KVA; para ser instalados en el Sistema Eléctrico Nacional (SEN), en redes de distribución.`,
-        price: '$USD 10.00',
-        realPrice: 10,
-        regularPrice: '$USD 12.00',
         details: [
             {
                 name: 'Caracteristicas',
