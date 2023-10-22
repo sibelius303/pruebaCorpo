@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-
+        <link rel="icon" href="/logoespirales.png" sizes="any" />
         <title>
-          CORPOELEC INDUSTRIAL
+          Corpoelec Industrial
         </title>
       </head>
       <body className={inter.className}>

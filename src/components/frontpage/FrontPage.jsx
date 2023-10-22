@@ -33,6 +33,8 @@ import escudoAviacion from '../../../public/ImagesCadeteSiempre/escudoAviacion.p
 import { useRouter } from 'next/navigation'
 import AcademyComponent from './AcademyComponent'
 import { ROUTER_PATH } from '@/tools/constants'
+import ProductSlider from '../product/ProductSlider'
+import { products } from '../../tools/mockup/products.mockup'
 
 const currencies = ['BS', 'USD']
 const navigation = {
@@ -322,32 +324,50 @@ export default function FrontPage() {
 				</section> */}
 
 				{/* Featured section */}
+				<h2 className="text-3xl mt-20 font-bold text-center tracking-tight sm:text-4xl">
+					<span className="block sm:inline">Nuestros Productos</span>
+				</h2>
+				<div className='my-10'>
+					{/*  */}
+					<ProductSlider products={products} />
+					{/*  */}
+				</div>
+				<div className='w-full flex justify-center'>
+					<button
+						onClick={()=>{router.push(ROUTER_PATH.PRODUCTS)}}
+						className="block w-full rounded-md border border-transparent bg-gradient-to-r from-azulPantone to-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
+					>
+						Ver Productos
+					</button>
+				</div>
 				<section
 					aria-labelledby="social-impact-heading"
-					className={`mx-auto max-w-7xl bg-white shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}
+					className={`mt-20 mx-auto max-w-7xl bg-white shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}
 				>
 					<div className="relative overflow-hidden rounded-lg">
 						<div className="absolute inset-0">
-							<img
-								src="https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg"
-								alt=""
+							<Image
+								src={"/sobreLaEmpresa.jpeg"}
+								alt="imagen de muestra"
 								className="h-full w-full object-cover object-center"
+								width={300}
+								height={300}
 							/>
 						</div>
-						<div className="relative bg-gray-900 bg-opacity-75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
+						<div className=" relative bg-gray-900 bg-opacity-75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
 							<div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
 								<h2 id="social-impact-heading" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-									<span className="block sm:inline">Arma tu pedido y envialo a quien tu quieras para cancelarlo</span>
+									<span className="block sm:inline">Conoce mas acerca de nosotros, nuestra Misión y Visión</span>
 								</h2>
-								<p className="mt-3 text-xl text-white">
+								{/* <p className="mt-3 text-xl text-white">
 									Aqui podras hacer las compras que necesites en pocos clicks.
-								</p>
-								<a
-									href="#"
-									className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
+								</p> */}
+								<button
+									onClick={()=>{router.push(ROUTER_PATH.ABOUT)}}
+									className="mt-8 block w-full rounded-md border border-transparent bg-gradient-to-r from-azulPantone to-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
 								>
-									Empezar
-								</a>
+									Sobre Nosotros
+								</button>
 							</div>
 						</div>
 					</div>
