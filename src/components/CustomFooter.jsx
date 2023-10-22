@@ -5,11 +5,7 @@ export default function CustomFooter() {
 
     const footerNavigation = {
         shop: [
-            { name: 'Fuerza Armada Bolivariana', href: '#' },
-            { name: 'Guardia Nacional Bolivariana', href: '#' },
-            { name: 'Ejercito Bolivariano', href: '#' },
-            { name: 'Aviacion Mitilar Bolivariana', href: '#' },
-            { name: 'Milicia Bolivariana', href: '#' },
+            { name: 'Productos', href: '#' },
         ],
         company: [
             { name: 'Quienes somos', href: '#' },
@@ -28,7 +24,6 @@ export default function CustomFooter() {
             { name: 'Contactanos', href: '#' },
             { name: 'Twitter', href: '#' },
             { name: 'Instagram', href: '#' },
-            { name: 'Pinterest', href: '#' },
         ],
     }
 
