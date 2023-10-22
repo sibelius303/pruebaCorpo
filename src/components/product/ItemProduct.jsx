@@ -13,7 +13,7 @@ export default function ItemProduct({ product }) {
                 className="w-full md:h-[35vh] h-[20vh] object-cover object-center rounded-tl-xl rounded-bl-xl md:rounded-tr-xl md:rounded-bl-none"
             />
         </div>
-        <div className="flex flex-col justify-between px-3 pb-4 h-auto md:h-[25vh]">
+        <div className="flex flex-col justify-between px-3 pb-4 h-auto md:h-[20vh]">
             <span>
                 <h3 className="mt-5 md:mt-2  mb-2 md:mb-5 text-md md:text-sm text-gray-800">{product.name}</h3>
                 <span className="block pb-2 text-gray-500 text-sm">{product.description.slice(0,100)}{product.description.length>100?'...':'.'}</span>
