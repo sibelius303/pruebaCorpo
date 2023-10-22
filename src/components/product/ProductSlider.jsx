@@ -8,10 +8,12 @@ export default function ProductSlider({products, height = 300}) {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        initialSlide: 0
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        autoplay: true,
+        autoplaySpeed: 3000
       };
 
     console.log( 'slider', products )
@@ -20,7 +22,7 @@ export default function ProductSlider({products, height = 300}) {
         <div className="product-slider" style={{ overflowAnchor: "none" }}>
             <div className="slider">
                 <Slider {...settings} >
-                    {products.map((product, index) => (
+                    {products?.map((product, index) => (
                         <span className="px-2" key={product.id}>
                             <Link className="group relative w-fit" href={`?item=${index}`}>
                                 <div className="h-auto w-full rounded-lg overflow-hidden group-hover:opacity-75">
