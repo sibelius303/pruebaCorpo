@@ -7,8 +7,9 @@ import MenuNav from './MenuNav';
 
 import { mainNavigation, secondaryNavigation } from '@/tools/navigation';
 import { ROUTER_PATH } from '@/tools/constants';
+import Image from 'next/image';
 
-export default function MovilMenu(){
+export default function MovilMenu() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return <div>
@@ -40,9 +41,17 @@ export default function MovilMenu(){
                         leaveFrom="translate-x-0"
                         leaveTo="-translate-x-full"
                     >
-                        <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-black pb-12 shadow-xl">
+                        <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-gradient-to-r from-azulPantone to-rojoPantone pb-12 shadow-xl">
                             <div className="flex justify-between px-4 pb-2 pt-5">
-                                <button onClick={() => { router.push(ROUTER_PATH.HOME); setMobileMenuOpen(false) }} className='text-white w-full text-lg font-bold'>CadeteSiempre</button>
+                                <button onClick={() => { router.push(ROUTER_PATH.HOME); setMobileMenuOpen(false) }} className='text-white w-full text-lg font-bold flex items-center gap-2'>
+                                    <Image
+                                        src={'/logoespirales.png'}
+                                        width={50}
+                                        height={50}
+                                        alt=''
+                                    />
+                                    Corpoelec Industrial
+                                </button>
                                 <button
                                     type="button"
                                     className="-m-2 inline-flex items-center justify-center rounded-md p-2 text-white"
@@ -59,12 +68,12 @@ export default function MovilMenu(){
                                 </Tab.Panels>
                             </Tab.Group>
 
-                            <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                            {/* <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                                 <MenuNav navigation={mainNavigation} movil onClick={()=>setMobileMenuOpen(false)}/>
-                            </div>
+                            </div> */}
 
                             <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                                <MenuNav navigation={secondaryNavigation.map( item => ({...item, className:null}))} movil onClick={()=>setMobileMenuOpen(false)}/>
+                                <MenuNav navigation={secondaryNavigation.map(item => ({ ...item, className: null }))} movil onClick={() => setMobileMenuOpen(false)} />
                             </div>
                         </Dialog.Panel>
                     </Transition.Child>

@@ -151,21 +151,21 @@ const collections = [
 	{
 		name: 'Tarjetas',
 		href: '#',
-		imageSrc: "https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg",
+		imageSrc: "/tarjeta.jpeg",
 		imageAlt: 'PayPal Logo.',
 		description: 'Tarjeta de Credito/Debito.',
 	},
 	{
 		name: 'Transferencia',
 		href: '#',
-		imageSrc: "https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg",
+		imageSrc: "/transferencia.jpeg",
 		imageAlt: 'Binance.',
 		description: 'Transferencia Bancaria.',
 	},
 	{
 		name: 'Efectivo',
 		href: '#',
-		imageSrc: "https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg",
+		imageSrc: "/efectivo.png",
 		imageAlt: 'Skrill.',
 		description: 'Paga en nuestras oficinas al buscar tus productos',
 	},
@@ -229,7 +229,7 @@ export default function FrontPage() {
 					<Image
 						src="/logovolumetricoBlanco.png"
 						alt=""
-						className="h-full w-full  object-center"
+						className="lg:h-full lg:w-full  object-center"
 						width={1000}
 						height={1000}
 					/>
@@ -334,7 +334,7 @@ export default function FrontPage() {
 				</div>
 				<div className='w-full flex justify-center'>
 					<button
-						onClick={()=>{router.push(ROUTER_PATH.PRODUCTS)}}
+						onClick={() => { router.push(ROUTER_PATH.PRODUCTS) }}
 						className="block w-full rounded-md border border-transparent bg-gradient-to-r from-azulPantone to-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
 					>
 						Ver Productos
@@ -363,7 +363,7 @@ export default function FrontPage() {
 									Aqui podras hacer las compras que necesites en pocos clicks.
 								</p> */}
 								<button
-									onClick={()=>{router.push(ROUTER_PATH.ABOUT)}}
+									onClick={() => { router.push(ROUTER_PATH.ABOUT) }}
 									className="mt-8 block w-full rounded-md border border-transparent bg-gradient-to-r from-azulPantone to-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
 								>
 									Sobre Nosotros
@@ -387,19 +387,23 @@ export default function FrontPage() {
 
 					<div className="mt-10 space-y-12 pb-24  lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
 						{collections.map((collection) => (
-							<a key={collection.name} href={collection.href} className="group block">
+							<a key={collection.name} href={collection.href} className="flex flex-col justify-between group ">
 								<div
 									aria-hidden="true"
-									className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
+									className="h-[400px] w-full overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-6 group-hover:opacity-75"
 								>
-									<img
+									<Image
 										src={collection.imageSrc}
 										alt={collection.imageAlt}
 										className="h-full w-full object-cover object-center"
+										width={300}
+										height={300}
 									/>
 								</div>
-								<h3 className="mt-4 text-base font-semibold text-gray-900">{collection.name}</h3>
-								<p className="mt-2 text-sm text-gray-500">{collection.description}</p>
+								<div>
+									<h3 className="mt-4 text-base font-semibold text-gray-900">{collection.name}</h3>
+									<p className="mt-2 text-sm text-gray-500">{collection.description}</p>
+								</div>
 							</a>
 						))}
 					</div>

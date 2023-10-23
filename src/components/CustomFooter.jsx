@@ -12,7 +12,7 @@ export default function CustomFooter() {
             //{ name: 'Sostenibilidad', href: '#' },
             //{ name: 'Noticias', href: '#' },
             //{ name: 'Carrera', href: '#' },
-            { name: 'Terminos y Condiciones', href: '#' },
+            // { name: 'Terminos y Condiciones', href: '#' },
             //{ name: 'Privacidad', href: '#' },
         ],
         account: [
@@ -62,7 +62,7 @@ export default function CustomFooter() {
                         </div>
                     </div>
                     <div className="space-y-12 md:grid md:grid-cols-2 md:gap-8 md:space-y-0">
-                        <div>
+                        {/* <div>
                             <h3 className="text-sm font-medium text-white">Cuenta</h3>
                             <ul role="list" className="mt-6 space-y-6">
                                 {footerNavigation.account.map((item) => (
@@ -73,7 +73,7 @@ export default function CustomFooter() {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </div> */}
                         <div>
                             <h3 className="text-sm font-medium text-white">Conecta</h3>
                             <ul role="list" className="mt-6 space-y-6">
@@ -88,7 +88,7 @@ export default function CustomFooter() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-12 md:mt-16 xl:mt-0">
+                {/* <div className="mt-12 md:mt-16 xl:mt-0">
                     <h3 className="text-sm font-medium text-white">¿Aun no tienes cuenta?</h3>
                     <p className="mt-6 text-sm text-gray-300">Registrate para comenzar a disfrutar de nuestros productos</p>
                     <Link
@@ -97,7 +97,7 @@ export default function CustomFooter() {
                     >
                         Registrarse
                     </Link>
-                </div>
+                </div> */}
             </div>
             <div className="border-t border-gray-800 py-10">
                 <p className="text-sm text-gray-400">Copyright &copy; 2023</p>
