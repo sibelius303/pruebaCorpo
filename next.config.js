@@ -3,6 +3,7 @@ const nextConfig = {
     env: {
         DB_URI: "mongodb://localhost:27017/ecommercev1",
         API_URL: "http://localhost:3000/api",
+        LINK_WHATSAPP: "https://wa.me/00000"
     },
     images: {
         // remotePatterns: [{ protocol: "https:", hostname: "**" }],
