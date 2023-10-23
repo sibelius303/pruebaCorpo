@@ -14,7 +14,7 @@ export default function About() {
 				<div className="shadow-lg bg-white w-full rounded-md  ">
 					<Image width={700} height={500} className=" rounded-md" src={"/sobreLaEmpresa.jpeg"} alt="Imagen de muestra" />
 				</div>
-				<div className="absolute top-32 right-20 max-w-2xl bg-gradient-to-r from-azulPantone to-rojoPantone text-white p-4 rounded-md">
+				<div className="lg:absolute top-32 right-20 max-w-2xl bg-gradient-to-r from-azulPantone to-rojoPantone text-white p-4 rounded-md">
 					<h1 className="text-4xl font-bold mb-8 text-center">Sobre Nosotros</h1>
 					<p className="text-lg">Corpoelec Industrial fue creada el 13 de agosto de 2013, a través del Decreto Presidencial
 						N° 321, publicado en la Gaceta Oficial N° 40.227, cuando el Presidente de la República,
