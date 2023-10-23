@@ -6,8 +6,6 @@ import { Inter } from 'next/font/google'
 import CustomFooter from '@/components/CustomFooter'
 import Image from 'next/image';
 import FloatingIcon from '@/components/FloatingIcon';
-import WhatsappIcon from '@/components/WhatsappIcon';
-
 
 
 const inter = Inter({ subsets: ['latin'] })
