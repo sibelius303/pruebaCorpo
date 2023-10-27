@@ -8,9 +8,11 @@ import MenuNav from './MenuNav';
 import { mainNavigation, secondaryNavigation } from '@/tools/navigation';
 import { ROUTER_PATH } from '@/tools/constants';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function MovilMenu() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const router = useRouter()
 
     return <div>
         <button type="button" className="-ml-2 p-2 text-white" onClick={() => setMobileMenuOpen(true)}>
@@ -72,8 +74,8 @@ export default function MovilMenu() {
                                 <MenuNav navigation={mainNavigation} movil onClick={()=>setMobileMenuOpen(false)}/>
                             </div> */}
 
-                            <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                                <MenuNav navigation={secondaryNavigation.map(item => ({ ...item, className: null }))} movil onClick={() => setMobileMenuOpen(false)} />
+                            <div onClick={() => setMobileMenuOpen(false)} className="space-y-6 border-t border-gray-200 px-4 py-6">
+                                <MenuNav navigation={secondaryNavigation.map(item => ({ ...item, className: null }))} movil  />
                             </div>
                         </Dialog.Panel>
                     </Transition.Child>

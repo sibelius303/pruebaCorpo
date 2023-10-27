@@ -35,6 +35,10 @@ import AcademyComponent from './AcademyComponent'
 import { ROUTER_PATH } from '@/tools/constants'
 import ProductSlider from '../product/ProductSlider'
 import { products } from '../../tools/mockup/products.mockup'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+import Contactenos from '../Contactenos'
 
 const currencies = ['BS', 'USD']
 const navigation = {
@@ -207,25 +211,29 @@ export default function FrontPage() {
 	const router = useRouter()
 	const [showAll, setShowAll] = useState(false);
 
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
 	return (
-		<div className="bg-gradient-to-b from-slate-100">
+		<div className="bg-white">
 			{/* Mobile menu */}
 
 
 			{/* Hero section */}
-			<div className="relative h-screen bg-gray-900">
+			<div data-aos="fade-up" className="relative h-96 mt-10 px-20">
 				{/* Decorative image and overlay */}
-				<div aria-hidden="true" className="absolute inset-0 overflow-hidden">
+				<div aria-hidden="true" className="absolute  px-20 rounded-md  inset-0 overflow-hidden">
 					<Image
 						src="/portadacatalogo2.jpg"
 						alt=""
-						className="h-full w-full object-cover object-center"
+						className="h-full w-full object-cover object-center rounded-md"
 						width={1000}
 						height={1000}
 					/>
 				</div>
-				<div aria-hidden="true" className="absolute inset-0 bg-gray-900 opacity-50" />
-				<div className="relative mx-auto h-screen w-full flex  flex-col items-center justify-center px-6  text-center sm:py-16 lg:px-60">
+				<div aria-hidden="true" className="absolute rounded-md mx-20 bg-slate-800  inset-0  opacity-50" />
+				<div className="relative mx-auto h-96 w-full flex rounded-md    flex-col items-center justify-center px-6  text-center sm:py-16 lg:px-60">
 					<Image
 						src="/logovolumetricoBlanco.png"
 						alt=""
@@ -324,15 +332,15 @@ export default function FrontPage() {
 				</section> */}
 
 				{/* Featured section */}
-				<h2 className="text-3xl mt-20 font-bold text-center tracking-tight sm:text-4xl">
+				<h2 data-aos="fade-up" className="text-3xl mt-20 font-bold text-center tracking-tight sm:text-4xl">
 					<span className="block sm:inline">Nuestros Productos</span>
 				</h2>
-				<div className='my-10'>
+				<div data-aos="fade-up" className='my-10 h-72 p-10 bg-white'>
 					{/*  */}
 					<ProductSlider products={products} />
 					{/*  */}
 				</div>
-				<div className='w-full flex justify-center'>
+				<div data-aos="fade-up" className='w-full flex justify-center'>
 					<button
 						onClick={() => { router.push(ROUTER_PATH.PRODUCTS) }}
 						className="block w-full rounded-md border border-transparent bg-gradient-to-r from-azulPantone to-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
@@ -341,8 +349,9 @@ export default function FrontPage() {
 					</button>
 				</div>
 				<section
+					data-aos="fade-up"
 					aria-labelledby="social-impact-heading"
-					className={`mt-20 mx-auto max-w-7xl bg-white shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}
+					className={`mt-20 mx-auto max-w-7xl mb-10 bg-white shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}
 				>
 					<div className="relative overflow-hidden rounded-lg">
 						<div className="absolute inset-0">
@@ -372,9 +381,13 @@ export default function FrontPage() {
 						</div>
 					</div>
 				</section>
+				<div data-aos="fade-up" className={`mt-20 mx-auto max-w-7xl mb-10 flex justify-center items-center bg-white shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}>
+					<Contactenos />
+				</div>
+
 
 				{/* Collection section */}
-				<section
+				{/* <section
 					aria-labelledby="collection-heading"
 					className="bg-white shadow-md mx-auto rounded-b-md max-w-xl px-4 pt-24 mb-10 sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8"
 				>
@@ -407,7 +420,7 @@ export default function FrontPage() {
 							</a>
 						))}
 					</div>
-				</section>
+				</section> */}
 
 				{/* Featured section */}
 				{/* <section aria-labelledby="comfort-heading" className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">

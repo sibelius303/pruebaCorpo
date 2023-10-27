@@ -61,7 +61,7 @@ export default function CustomFooter() {
                             </ul>
                         </div>
                     </div>
-                    <div className="space-y-12 md:grid md:grid-cols-2 md:gap-8 md:space-y-0">
+                    <div className="space-y-12 md:grid md:grid-cols-2 lg:grid-cols-1 md:gap-8 md:space-y-0">
                         {/* <div>
                             <h3 className="text-sm font-medium text-white">Cuenta</h3>
                             <ul role="list" className="mt-6 space-y-6">
