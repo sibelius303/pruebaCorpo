@@ -221,28 +221,6 @@ export default function FrontPage() {
 
 
 			{/* Hero section */}
-			<div data-aos="fade-up" className="relative h-96 mt-10 px-20">
-				{/* Decorative image and overlay */}
-				<div aria-hidden="true" className="absolute  px-20 rounded-md  inset-0 overflow-hidden">
-					<Image
-						src="/portadacatalogo2.jpg"
-						alt=""
-						className="h-full w-full object-cover object-center rounded-md"
-						width={1000}
-						height={1000}
-					/>
-				</div>
-				<div aria-hidden="true" className="absolute rounded-md mx-20 bg-slate-800  inset-0  opacity-50" />
-				<div className="relative mx-auto h-96 w-full flex rounded-md    flex-col items-center justify-center px-6  text-center sm:py-16 lg:px-60">
-					<Image
-						src="/logovolumetricoBlanco.png"
-						alt=""
-						className="lg:h-full lg:w-full  object-center"
-						width={1000}
-						height={1000}
-					/>
-				</div>
-			</div>
 
 			<main>
 				{/* Category section */}
@@ -381,9 +359,7 @@ export default function FrontPage() {
 						</div>
 					</div>
 				</section>
-				<div data-aos="fade-up" className={`mt-20 mx-auto max-w-7xl mb-10 flex justify-center items-center bg-white shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}>
-					<Contactenos />
-				</div>
+
 
 
 				{/* Collection section */}

@@ -17,11 +17,11 @@ export default function About() {
 
 	return (
 		<div  className=" h-auto lg:px-20 pt-10 pb-20 rounded-md bg-slate-100">
-			<div  className="w-full lg:mt-20">
+			<div  className=" flex flex-col lg:flex-row lg:justify-between items-center gap-4 lg:gap-2 mt-14">
 				<div className="shadow-lg bg-white w-full rounded-md  ">
 					<Image width={700} height={500} className=" rounded-md" src={"/sobreLaEmpresa.jpeg"} alt="Imagen de muestra" />
 				</div>
-				<div className="lg:absolute lg:top-32 lg:right-20 max-w-2xl bg-gradient-to-r from-azulPantone to-rojoPantone text-white p-4 rounded-md">
+				<div className="lg:absolute lg:right-20 lg:w-1/2 bg-gradient-to-r from-azulPantone to-rojoPantone text-white  lg:max-h-72  p-4 rounded-md">
 					<h1 className="text-4xl font-bold mb-8 text-center">Sobre Nosotros</h1>
 					<p className="text-lg">Corpoelec Industrial fue creada el 13 de agosto de 2013, a través del Decreto Presidencial
 						N° 321, publicado en la Gaceta Oficial N° 40.227, cuando el Presidente de la República,
@@ -52,7 +52,7 @@ export default function About() {
 				<div className="overflow-hidden shadow-lg bg-white w-full rounded-md">
 					<Image width={700} height={500} className="rounded-md" src="/vision.JPG" alt="Imagen de muestra" />
 				</div>
-				<div className="lg:absolute lg:right-20 lg:w-1/2 bg-gradient-to-r from-azulPantone to-rojoPantone text-white  lg:max-h-64  p-4 rounded-md">
+				<div className="lg:absolute lg:right-0 lg:w-1/2 bg-gradient-to-r from-azulPantone to-rojoPantone text-white  lg:max-h-64  p-4 rounded-md">
 					<h1 className="text-4xl font-bold mb-4 text-center  ">Visión</h1>
 					<p className="text-lg">Posicionarnos en el mercado internacional
 						como modelo de gestión pública, nuestra
