@@ -216,7 +216,7 @@ export default function FrontPage() {
 	}, []);
 
 	return (
-		<div className="bg-white">
+		<div className="text-white">
 			{/* Mobile menu */}
 
 
@@ -224,7 +224,7 @@ export default function FrontPage() {
 
 			<main>
 				{/* Category section */}
-				{/* <section  className="hidden bg-white shadow-md rounded-t-md  mt-10 pt-24 sm:pt-32 lg:block xl:mx-auto xl:h-auto xl:max-w-7xl xl:px-8">
+				{/* <section  className="hidden  shadow-md rounded-t-md  mt-10 pt-24 sm:pt-32 lg:block xl:mx-auto xl:h-auto xl:max-w-7xl xl:px-8">
 					<div className="px-4 text-center w-full sm:flex sm:items-center sm:justify-center sm:px-6 lg:px-8 xl:px-0">
 						<h2 id="category-heading" className="text-2xl font-bold tracking-tight text-gray-900">
 							Academias
@@ -269,13 +269,13 @@ export default function FrontPage() {
 									
 								</div>
 								<div className=' hidden lg:flex w-full justify-center'>
-									<button className='text-blue-700 hover:text-blue-400 mt-5 inline-block rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium  hover:bg-gray-100' onClick={() => setShowAll(prev => !prev)}>{showAll ? 'Cerrar' : 'Ver todas las Academias'}</button>
+									<button className='text-blue-700 hover:text-blue-400 mt-5 inline-block rounded-md border border-transparent  px-8 py-3 text-base font-medium  hover:bg-gray-100' onClick={() => setShowAll(prev => !prev)}>{showAll ? 'Cerrar' : 'Ver todas las Academias'}</button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section> */}
-				{/* <section  className=" bg-white shadow-md rounded-t-md  mt-10 pt-24 sm:pt-32 lg:hidden ">
+				{/* <section  className="  shadow-md rounded-t-md  mt-10 pt-24 sm:pt-32 lg:hidden ">
 					<div className="px-4 text-center w-full sm:flex sm:items-center sm:justify-center sm:px-6 lg:px-8 xl:px-0">
 						<h2 id="category-heading" className="text-2xl font-bold tracking-tight text-gray-900">
 							Academias
@@ -313,7 +313,7 @@ export default function FrontPage() {
 				<h2 data-aos="fade-up" className="text-3xl mt-20 font-bold text-center tracking-tight sm:text-4xl">
 					<span className="block sm:inline">Nuestros Productos</span>
 				</h2>
-				<div data-aos="fade-up" className='my-10 h-72 p-10 bg-white'>
+				<div data-aos="fade-up" className='my-10 h-72 p-10 '>
 					{/*  */}
 					<ProductSlider products={products} />
 					{/*  */}
@@ -321,7 +321,7 @@ export default function FrontPage() {
 				<div data-aos="fade-up" className='w-full flex justify-center'>
 					<button
 						onClick={() => { router.push(ROUTER_PATH.PRODUCTS) }}
-						className="block w-full rounded-md border border-transparent bg-gradient-to-r from-azulPantone to-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
+						className="block w-full rounded-md border border-transparent bg-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
 					>
 						Ver Productos
 					</button>
@@ -329,7 +329,7 @@ export default function FrontPage() {
 				<section
 					data-aos="fade-up"
 					aria-labelledby="social-impact-heading"
-					className={`mt-20 mx-auto max-w-7xl mb-10 bg-white shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}
+					className={`mt-20 mx-auto max-w-7xl mb-10  shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}
 				>
 					<div className="relative overflow-hidden rounded-lg">
 						<div className="absolute inset-0">
@@ -351,7 +351,7 @@ export default function FrontPage() {
 								</p> */}
 								<button
 									onClick={() => { router.push(ROUTER_PATH.ABOUT) }}
-									className="mt-8 block w-full rounded-md border border-transparent bg-gradient-to-r from-azulPantone to-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
+									className="mt-8 block w-full rounded-md border border-transparent bg-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
 								>
 									Sobre Nosotros
 								</button>
@@ -365,7 +365,7 @@ export default function FrontPage() {
 				{/* Collection section */}
 				{/* <section
 					aria-labelledby="collection-heading"
-					className="bg-white shadow-md mx-auto rounded-b-md max-w-xl px-4 pt-24 mb-10 sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8"
+					className=" shadow-md mx-auto rounded-b-md max-w-xl px-4 pt-24 mb-10 sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8"
 				>
 					<h2 id="collection-heading" className="text-2xl font-bold tracking-tight text-gray-900">
 						¡Paga con tus medios de pagos favoritos!

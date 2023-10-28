@@ -16,14 +16,14 @@ export default async function CustomHeader() {
     const user = await getUser()
 
 
-    const mainNav = mainNavigation.filter( item => {
-        if( isAuthenticatedBool ) { // Si esta autenticado
-            return item.id!==ROUTER_ID.LOGIN
+    const mainNav = mainNavigation.filter(item => {
+        if (isAuthenticatedBool) { // Si esta autenticado
+            return item.id !== ROUTER_ID.LOGIN
         } else { // Si no esta autenticado
-            return item.id!==ROUTER_ID.PROFILE && item.id!==ROUTER_ID.LOGOUT
+            return item.id !== ROUTER_ID.PROFILE && item.id !== ROUTER_ID.LOGOUT
         }
-    } ).map( item => {
-        if( user && item.id===ROUTER_ID.PRODUCTS ) {
+    }).map(item => {
+        if (user && item.id === ROUTER_ID.PRODUCTS) {
             return {
                 ...item,
                 href: '/' + user.academic + ROUTER_PATH.PRODUCTS
@@ -32,25 +32,29 @@ export default async function CustomHeader() {
         return item
     })
 
-    return <header className="relative z-10 bg-gradient-to-r from-white to-slate-200">
-        <nav aria-label="Top">
-            <div className=" h-20 bg-gradient-to-r from-white to-slate-200">
-                <div className="mx-auto flex items-center justify-between w-full h-full max-w-7xl px-4 sm:px-6 lg:px-8">
-                    {/* <div> */}
-                        <div className="flex h-16 w-full items-center justify-between">
-                            <div className="hidden lg:flex lg:flex-1 lg:items-center">
-                                <Link style={{boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'}} className='flex items-center px-4 py-1 gap-2' href="/">
-                                    <Image 
-                                        src={logoEspiral}
-                                        width={50}
-                                        height={50}
-                                        alt=''
-                                    />
-                                    <span className="text-lg font-bold  text-black uppercase">Corpoelec Industrial</span>
-                                </Link>
-                            </div>
+    return <header className="relative z-10 ">
 
-                            {/* <div className="hidden h-full lg:flex">
+        <nav aria-label="Top">
+            <div className=" h-auto bg-white">
+                <div className="w-full h-16">
+                    <Image className="w-1/2 h-16" src={"/cintillo.jpg"} width={1000} height={100} />
+                </div>
+                <div className="mx-auto flex items-start justify-between w-full h-full max-w-7xl px-4 sm:px-6 lg:px-8 ">
+                    {/* <div> */}
+                    <div className="flex h-16 w-full items-center justify-between">
+                        <div className="hidden lg:flex lg:flex-1 lg:items-center">
+                            <Link  className='flex items-center px-4 py-1 gap-2' href="/">
+                                <Image
+                                    src={logoEspiral}
+                                    width={50}
+                                    height={50}
+                                    alt=''
+                                />
+                                <span className="text-lg font-bold  text-black uppercase">Corpoelec Industrial</span>
+                            </Link>
+                        </div>
+
+                        {/* <div className="hidden h-full lg:flex">
                                 <div className="inset-x-0 bottom-0 px-4">
                                     <div className="flex h-full justify-center space-x-8">
                                         <MenuNav navigation={mainNav} />
@@ -58,22 +62,22 @@ export default async function CustomHeader() {
                                 </div>
                             </div> */}
 
-                            <div className="flex flex-1 items-center lg:hidden">
-                                <MovilMenu />
-                            </div>
+                        <div className="flex flex-1 items-center lg:hidden">
+                            <MovilMenu />
+                        </div>
 
-                            <div className="flex flex-1 items-center justify-end gap-3  text-black">
-                                <Link href="/consulta" className="text-black block lg:hidden">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                                    </svg>
-                                </Link>
-                                <MenuNav navigation={secondaryNavigation} />
-                                {/* <div className="ml-4 flow-root lg:ml-8">
+                        <div className="flex flex-1 items-center justify-end gap-3  text-black">
+                            <Link href="/consulta" className="text-black block lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                </svg>
+                            </Link>
+                            <MenuNav navigation={secondaryNavigation} />
+                            {/* <div className="ml-4 flow-root lg:ml-8">
                                     <ButtonCart />
                                 </div> */}
-                            </div>
                         </div>
+                    </div>
                     {/* </div> */}
                 </div>
             </div>

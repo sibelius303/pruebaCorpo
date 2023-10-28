@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         rojoPantone: '#8C2226',
-        azulPantone: '#1B103B'
+        azulPantone: '#1B103B',
+        fondo: '#000028'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

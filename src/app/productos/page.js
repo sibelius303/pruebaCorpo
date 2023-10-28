@@ -5,7 +5,7 @@ import { products } from '../../tools/mockup/products.mockup';
 export default async function Products() {
 
     return (
-        <main className="flex min-h-screen flex-col bg-slate-100">
+        <main className="flex min-h-screen flex-col">
             {/* <form className="flex flex-col md:flex-row justify-between items-center mb-4 bg-black opacity-90 p-3 gap-3">
                 <ul className="flex flex-row justify-between w-full md:w-1/3 p-0 m-0">
                     <li><a className="text-white p-2 pb-0 border-b-2 border-b-white" href="#">Ascenso 1</a></li>

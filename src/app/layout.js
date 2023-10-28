@@ -21,7 +21,9 @@ export default function RootLayout({ children }) {
           Corpoelec Industrial
         </title>
       </head>
-      <body className={inter.className}>
+      <body 
+        style={{ backgroundColor: '#000028' }} 
+        className={inter.className}>
         <CustomHeader />
         <div data-aos="fade-up" className="relative h-96 mt-10 px-20">
 				{/* Decorative image and overlay */}
@@ -46,7 +48,7 @@ export default function RootLayout({ children }) {
 				</div>
 			</div>
         {children}
-        <div data-aos="fade-up" className={`mt-5 mx-auto max-w-7xl mb-20 flex justify-center items-center bg-white px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8`}>
+        <div data-aos="fade-up" className={`mt-5 mx-auto max-w-7xl mb-20 flex justify-center items-center px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8`}>
 					<Contactenos />
 				</div>
         <CustomFooter />
