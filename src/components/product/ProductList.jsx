@@ -10,18 +10,14 @@ export default function ProductList({ products }) {
 
 	useEffect(() => {
 		AOS.init({
-			once: true,      
-			easing: 'ease',  
-			delay: 700   
+			once: true,
+			easing: 'ease',
+			delay: 700
 		  });
 	}, []);
 
 	return (
-		<div
-			className=" h-auto lg:px-20 pt-10 pb-20"
-		//className="px-5 md:px-28 py-10 bg-gradient-to-b from-slate-100 grid grid-cols-1 gap-x-6 gap-y-5 md:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8"
-		>
-			{/* {products.map((product) => <ItemProduct key={product.id} product={product} />)} */}
+		<div className=" h-auto lg:px-20 pt-10 pb-20">
 			<h1 data-aos="fade-up" className="text-4xl font-bold mb-10 mt-10 text-center text-white  ">Transformadores</h1>
 			<div data-aos="fade-up" className='flex  h-96 rounded-2xl shadow-2xl p-2'>
 				<div className='w-1/2 h-full flex flex-col gap-2'>
@@ -33,7 +29,7 @@ export default function ProductList({ products }) {
 						<Image src={'/ImagesCadeteSiempre/transf001.jpeg'} className='w-1/2 h-full' width={200} height={200} />
 					</div>
 				</div>
-				<div className='w-1/2 bg-rojoPantone text-white rounded-lg  '>
+				<div className='w-1/2 bg-rojoPantone text-white rounded-r-lg h-full '>
 					<h1 className="text-xl font-bold mb-4 text-center  ">Transformadores Monofasicos </h1>
 					<p className='px-4'>
 						Son Transformadores monofásicos de
@@ -57,9 +53,9 @@ export default function ProductList({ products }) {
 
 				</div>
 			</div>
-			<div data-aos="fade-up"  className='flex justify-center  h-96 mt-20 rounded-2xl shadow-2xl '>
-				<div className='flex w-5/6'>
-					<div className='w-1/2 bg-rojoPantone text-white rounded-lg '>
+			<div data-aos="fade-up"  className='flex justify-center  h-96  mt-20 rounded-2xl shadow-2xl '>
+				<div className='flex w-5/6 h-fit md:h-full flex-row justify-center gap-0'>
+					<div className='w-1/2 h-full bg-rojoPantone text-white rounded-l-lg p-5'>
 						<h1 className="text-xl font-bold mb-4 text-center  ">Transformadores Monofasicos Sumergible</h1>
 						<p className='px-4'>
 							Los transformadores de distribución
@@ -76,17 +72,15 @@ export default function ProductList({ products }) {
 							<p className='text-center'>100 KVA</p>
 						</div>
 					</div>
-					<div className='w-1/2 h-full flex justify-center gap-2'>
-						<div className=' h-full'>
-							<Image src={'/ImagesCadeteSiempre/transf004.jpg'} className='w-full h-full' width={400} height={150} />
-						</div>
+					<div className='w-1/4 h-auto bg-rojoPantone flex justify-end gap-2 rounded-r-lg overflow-hidden'>
+						<Image src={'/ImagesCadeteSiempre/transf004.jpg'} className='w-auto h-full' alt='' width={400} height={150} />
 					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" className='flex justify-center items-center  p-5 mt-20 rounded-2xl shadow-2xl'>
-				<div className='h-auto  w-5/6'>
-					<div className='flex h-auto w-full bg-rojoPantone text-white rounded-lg '>
-						<div className='w-1/2'>
+				<div className='h-auto w-5/6'>
+					<div className='flex h-auto w-full bg-rojoPantone text-white rounded-t-lg '>
+						<div className='w-1/2 p-5'>
 							<h1 className="text-xl font-bold mb-4 text-center  ">Transformadores Trifasicos Sumergible</h1>
 							<p className='px-4'>
 								Los transformadores de distribución
@@ -95,7 +89,7 @@ export default function ProductList({ products }) {
 								y casillas.
 							</p>
 						</div>
-						<div className='w-1/2'>
+						<div className='w-1/2 p-5'>
 							<h1 className="text-xl font-bold mb-4 text-center mt-2 ">Capacidades</h1>
 							<div className='grid grid-cols-2 gap-4 p-4'>
 								<p className='text-center'>550 KVA</p>
@@ -106,7 +100,7 @@ export default function ProductList({ products }) {
 							</div>
 						</div>
 					</div>
-					<div className=' w-full flex justify-center gap-2 h-1/2'>
+					<div className=' w-full flex justify-center h-1/2 rounded-b-lg overflow-hidden'>
 						<div className='w-1/2'>
 							<Image src={'/ImagesCadeteSiempre/transf005.jpeg'} className='w-full h-full' width={400} height={70} />
 						</div>
@@ -178,13 +172,11 @@ export default function ProductList({ products }) {
 				</div>
 			</div>
 			<h1 data-aos="fade-up" className="text-4xl font-bold mb-20 mt-20 text-center text-white  ">Aerogeneradores</h1>
-			<div data-aos="fade-up" className='flex  h-auto rounded-2xl shadow-2xl'>
-				<div className='w-1/2 h-1/2 flex flex-col gap-2'>
-					<div className=' h-1/2'>
-						<Image src={'/ImagesCadeteSiempre/vetorgenerador.jpeg'} className='w-full h-1/2' width={400} height={150} />
-					</div>
+			<div data-aos="fade-up" className='flex w-fit h-auto rounded-lg shadow-2xl overflow-hidden justify-center'>
+				<div className='w-fit h-fit flex flex-col gap-2'>
+					<Image src={'/ImagesCadeteSiempre/vetorgenerador.jpeg'} alt='' width={400} height={150} />
 				</div>
-				<div className='w-1/2 flex items-center bg-rojoPantone text-white rounded-lg '>
+				<div className='w-1/2 mx-0 px-0 h-auto flex items-center bg-rojoPantone text-white rounded-r-lg '>
 					<p className='px-4 text-2xl font-bold '>
 						Los aerogeneradores son una forma de energía
 						sostenible capaces de convertir la energía del
@@ -196,25 +188,7 @@ export default function ProductList({ products }) {
 					</p>
 				</div>
 			</div>
-			{/* <h1 data-aos="fade-up" className="text-4xl font-bold mb-10 mt-10 text-center  ">Fabrica de Uniformes</h1>
-			<div data-aos="fade-up" className='flex  h-auto'>
-				<div className='w-1/2 h-full flex flex-col gap-2'>
-					<div className=' h-1/2'>
-						<Image src={'/Uniformes2.jpeg'} className='w-full' width={400} height={150} />
-					</div>
-					<div className='flex h-1/2'>
-						<Image src={'/Uniformes1.jpeg'} className='w-1/2 h-full' width={200} height={200} />
-					</div>
-				</div>
-				<div className='w-1/2'>
-					<p className='px-4'>
-						Producción de franelas, chemises,
-						pantalones y bragas para el
-						personal del sector y entes
-						gubernamentales.
-					</p>
-				</div>
-			</div> */}
+			
 		</div>
 	)
 }
