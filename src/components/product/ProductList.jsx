@@ -19,14 +19,14 @@ export default function ProductList({ products }) {
 	return (
 		<div className=" h-auto lg:px-20 pt-10 pb-20">
 			<h1 data-aos="fade-up" className="text-4xl font-bold mb-10 mt-10 text-center text-white  ">Transformadores</h1>
-			<div data-aos="fade-up" className='flex  h-96 rounded-2xl shadow-2xl p-2'>
-				<div className='w-1/2 h-full flex flex-col gap-2'>
+			<div data-aos="fade-up" className='flex h-96 rounded-2xl shadow-2xl p-2'>
+				<div className='flex flex-col'>
 					<div className=' h-1/2'>
-						<Image src={'/ImagesCadeteSiempre/transf003.jpeg'} className='w-full' width={400} height={150} />
+						<Image src={'/ImagesCadeteSiempre/transf003.jpeg'} className='w-full h-auto' width={400} height={150} />
 					</div>
 					<div className='flex h-1/2'>
-						<Image src={'/ImagesCadeteSiempre/transf002.jpeg'} className='w-1/2 h-full' width={200} height={200} />
-						<Image src={'/ImagesCadeteSiempre/transf001.jpeg'} className='w-1/2 h-full' width={200} height={200} />
+						<Image src={'/ImagesCadeteSiempre/transf002.jpeg'} className='w-1/2 h-auto' width={200} height={200} />
+						<Image src={'/ImagesCadeteSiempre/transf001.jpeg'} className='w-1/2 h-auto' width={200} height={200} />
 					</div>
 				</div>
 				<div className='w-1/2 bg-rojoPantone text-white rounded-r-lg h-full '>
@@ -53,7 +53,7 @@ export default function ProductList({ products }) {
 
 				</div>
 			</div>
-			<div data-aos="fade-up"  className='flex justify-center  h-96  mt-20 rounded-2xl shadow-2xl '>
+			<div data-aos="fade-up"  className='flex justify-center h-96 mt-20 rounded-2xl shadow-2xl'>
 				<div className='flex w-5/6 h-fit md:h-full flex-row justify-center gap-0'>
 					<div className='w-1/2 h-full bg-rojoPantone text-white rounded-l-lg p-5'>
 						<h1 className="text-xl font-bold mb-4 text-center  ">Transformadores Monofasicos Sumergible</h1>
