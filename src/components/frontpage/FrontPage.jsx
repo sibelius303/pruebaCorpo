@@ -321,7 +321,7 @@ export default function FrontPage() {
 				<div data-aos="fade-up" className='w-full flex justify-center'>
 					<button
 						onClick={() => { router.push(ROUTER_PATH.PRODUCTS) }}
-						className="block w-full rounded-md border border-transparent bg-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
+						className="block w-full rounded-md border border-transparent bg-rojoPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto"
 					>
 						Ver Productos
 					</button>
@@ -346,12 +346,9 @@ export default function FrontPage() {
 								<h2 id="social-impact-heading" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
 									<span className="block sm:inline">Conoce mas acerca de nosotros, nuestra Misión y Visión</span>
 								</h2>
-								{/* <p className="mt-3 text-xl text-white">
-									Aqui podras hacer las compras que necesites en pocos clicks.
-								</p> */}
 								<button
 									onClick={() => { router.push(ROUTER_PATH.ABOUT) }}
-									className="mt-8 block w-full rounded-md border border-transparent bg-rojoPantone px-8 py-3 text-base font-medium text-white hover:bg-gray-100 sm:w-auto"
+									className="mt-8 block w-full rounded-md border border-transparent bg-rojoPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto"
 								>
 									Sobre Nosotros
 								</button>
