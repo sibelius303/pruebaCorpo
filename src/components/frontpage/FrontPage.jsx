@@ -321,7 +321,7 @@ export default function FrontPage() {
 				<div data-aos="fade-up" className='w-full flex justify-center'>
 					<button
 						onClick={() => { router.push(ROUTER_PATH.PRODUCTS) }}
-						className="block w-full rounded-md border border-transparent bg-rojoPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto"
+						className="block w-full rounded-md border border-transparent bg-azulPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto"
 					>
 						Ver Productos
 					</button>
@@ -348,7 +348,7 @@ export default function FrontPage() {
 								</h2>
 								<button
 									onClick={() => { router.push(ROUTER_PATH.ABOUT) }}
-									className="mt-8 block w-full rounded-md border border-transparent bg-rojoPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto"
+									className="mt-8 block w-full rounded-md border border-transparent bg-azulPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto"
 								>
 									Sobre Nosotros
 								</button>

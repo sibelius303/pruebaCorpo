@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         rojoPantone: '#8C2226',
-        azulPantone: '#1B103B',
+        azulPantone: '#1157CE',
         fondo: '#000028'
       },
       backgroundImage: {

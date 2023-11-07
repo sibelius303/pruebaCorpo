@@ -29,7 +29,7 @@ export default function ProductList({ products }) {
 						<Image src={'/ImagesCadeteSiempre/transf001.jpeg'} className='w-1/2 h-auto' width={200} height={200} />
 					</div>
 				</div>
-				<div className='w-1/2 bg-rojoPantone text-white rounded-r-lg h-full '>
+				<div className='w-1/2 bg-white text-black rounded-r-lg h-full '>
 					<h1 className="text-xl font-bold mb-4 text-center  ">Transformadores Monofasicos </h1>
 					<p className='px-4'>
 						Son Transformadores monofásicos de
@@ -55,7 +55,7 @@ export default function ProductList({ products }) {
 			</div>
 			<div data-aos="fade-up"  className='flex justify-center h-96 mt-20 rounded-2xl shadow-2xl'>
 				<div className='flex w-5/6 h-fit md:h-full flex-row justify-center gap-0'>
-					<div className='w-1/2 h-full bg-rojoPantone text-white rounded-l-lg p-5'>
+					<div className='w-1/2 h-full bg-white text-black rounded-l-lg p-5'>
 						<h1 className="text-xl font-bold mb-4 text-center  ">Transformadores Monofasicos Sumergible</h1>
 						<p className='px-4'>
 							Los transformadores de distribución
@@ -72,14 +72,14 @@ export default function ProductList({ products }) {
 							<p className='text-center'>100 KVA</p>
 						</div>
 					</div>
-					<div className='w-1/4 h-auto bg-rojoPantone flex justify-end gap-2 rounded-r-lg overflow-hidden'>
+					<div className='w-1/4 h-auto bg-white flex justify-end gap-2 rounded-r-lg overflow-hidden'>
 						<Image src={'/ImagesCadeteSiempre/transf004.jpg'} className='w-auto h-full' alt='' width={400} height={150} />
 					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" className='flex justify-center items-center  p-5 mt-20 rounded-2xl shadow-2xl'>
 				<div className='h-auto w-5/6'>
-					<div className='flex h-auto w-full bg-rojoPantone text-white rounded-t-lg '>
+					<div className='flex h-auto w-full bg-white text-black rounded-t-lg '>
 						<div className='w-1/2 p-5'>
 							<h1 className="text-xl font-bold mb-4 text-center  ">Transformadores Trifasicos Sumergible</h1>
 							<p className='px-4'>
@@ -117,7 +117,7 @@ export default function ProductList({ products }) {
 						<div data-aos="fade-up" className='w-1/2 p-2'>
 							<Image src={'/ImagesCadeteSiempre/lum001.jpg'} className='w-full h-full' width={400} height={70} />
 						</div>
-						<div data-aos="fade-up" className='w-1/2 flex flex-col justify-between p-5 bg-rojoPantone text-white rounded-lg '>
+						<div data-aos="fade-up" className='w-1/2 flex flex-col justify-between p-5 bg-white text-black rounded-lg '>
 							<h1 className='text-lg font-bold'>Lámpara alumbrado público
 								Tipo splash 100w</h1>
 							<h1 className='text-xl'> Capacidad</h1>
@@ -133,7 +133,7 @@ export default function ProductList({ products }) {
 						<div className='w-1/2 p-2'>
 							<Image src={'/ImagesCadeteSiempre/lum003.jpg'} className='w-full h-full' width={400} height={70} />
 						</div>
-						<div className='w-1/2 p-10 flex flex-col justify-between items-center bg-rojoPantone text-white rounded-lg '>
+						<div className='w-1/2 p-10 flex flex-col justify-between items-center bg-white text-black rounded-lg '>
 							<h1 className='font-bold'>Bulbo LED 12w</h1>
 							<h1 className='text-lg font-bold'>3 años de Garantia</h1>
 						</div>
@@ -144,7 +144,7 @@ export default function ProductList({ products }) {
 						<div className='w-1/2 p-2'>
 							<Image src={'/ImagesCadeteSiempre/lum004.jpg'} className='w-full h-full' width={400} height={70} />
 						</div>
-						<div className='w-1/2 p-10 h-full flex flex-col justify-between items-center bg-rojoPantone text-white rounded-lg '>
+						<div className='w-1/2 p-10 h-full flex flex-col justify-between items-center bg-white text-black rounded-lg '>
 							<h1 className='font-bold'>Panel superficial
 								18w LED</h1>
 							<h1 className='text-lg font-bold'>3 años de Garantia</h1>
@@ -159,7 +159,7 @@ export default function ProductList({ products }) {
 						<Image src={'/ImagesCadeteSiempre/panelessolares.jpeg'} className='w-full' width={400} height={150} />
 					</div>
 				</div>
-				<div className='w-1/2 flex items-center bg-rojoPantone text-white rounded-lg '>
+				<div className='w-1/2 flex items-center bg-white text-black rounded-lg '>
 					<p className='px-4 text-2xl font-bold'>
 						Los paneles solares son módulos fotovoltaicos
 						individuales que captan la energía que
@@ -176,7 +176,7 @@ export default function ProductList({ products }) {
 				<div className='w-fit h-fit flex flex-col gap-2'>
 					<Image src={'/ImagesCadeteSiempre/vetorgenerador.jpeg'} alt='' width={400} height={150} />
 				</div>
-				<div className='w-1/2 mx-0 px-0 h-auto flex items-center bg-rojoPantone text-white rounded-r-lg '>
+				<div className='w-1/2 mx-0 px-0 h-auto flex items-center bg-white text-black rounded-r-lg '>
 					<p className='px-4 text-2xl font-bold '>
 						Los aerogeneradores son una forma de energía
 						sostenible capaces de convertir la energía del

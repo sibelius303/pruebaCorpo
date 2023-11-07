@@ -12,6 +12,14 @@ import Contactenos from '@/components/Contactenos';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
+	const estiloComponente = {
+		backgroundImage: 'url("/fondo2.jpg")',
+		backgroundSize: 'cover',
+		backgroundPosition: 'center',
+		backgroundRepeat: 'repeat',
+		width: '100%', 
+		height: '100vh', 
+	  };
 
   return (
     <html lang="en">
@@ -22,7 +30,10 @@ export default function RootLayout({ children }) {
         </title>
       </head>
       <body 
-        style={{ backgroundColor: '#000028' }} 
+        style={
+			{ backgroundColor: '#e3e4e5' }
+			//estiloComponente
+		} 
         className={inter.className}>
         <CustomHeader />
         <div data-aos="fade-up" className="relative h-96 mt-10 px-20">
