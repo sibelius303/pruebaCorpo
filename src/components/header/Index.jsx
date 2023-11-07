@@ -9,6 +9,7 @@ import { getUser, isAuthenticated } from '@/tools/actions';
 import { ROUTER_ID, ROUTER_PATH } from '@/tools/constants';
 import Image from 'next/image';
 import logoEspiral from '../../../public/logoespirales.png'
+import Contactenos from '../Contactenos';
 
 export default async function CustomHeader() {
 
@@ -32,18 +33,30 @@ export default async function CustomHeader() {
         return item
     })
 
+    const estiloComponente = {
+        backgroundImage: 'url("/cintillogris.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'noRepeat',
+        width: '100%',
+        height: '100%',
+    };
+
     return <header className="relative z-10 ">
 
         <nav aria-label="Top">
             <div className=" h-auto bg-white">
-                <div className="w-full h-16">
-                    <Image className="w-1/2 h-16" src={"/cintillo.jpg"} width={1000} height={100} />
+                <div className="w-full h-auto p-4">
+                    <Image className="w-full h-[218px] rounded-md" src={"/cintillosuperior.jpg"} width={1000} height={100} alt={'no image'} />
                 </div>
-                <div className="mx-auto flex items-start justify-between w-full h-full max-w-7xl px-4 sm:px-6 lg:px-8 ">
+                <div className="mx-auto flex items-start justify-between w-full h-full ">
                     {/* <div> */}
-                    <div className="flex h-16 w-full items-center justify-between">
-                        <div className="hidden lg:flex lg:flex-1 lg:items-center">
-                            <Link  className='flex items-center px-4 py-1 gap-2' href="/">
+                    <div style={
+                        //{ backgroundColor: '#e3e4e5' }
+                        estiloComponente
+                    } className="flex h-16 w-full items-center justify-between">
+                        <div className="hidden lg:flex lg:flex-1 lg:items-center pl-4">
+                            <Link className='flex items-center px-4 py-1 gap-2' href="/">
                                 <Image
                                     src={logoEspiral}
                                     width={50}
@@ -66,13 +79,19 @@ export default async function CustomHeader() {
                             <MovilMenu />
                         </div>
 
-                        <div className="flex flex-1 items-center justify-end gap-3  text-black">
+                        <div className="flex flex-1 items-center justify-center gap-3  text-black pr-4">
                             <Link href="/consulta" className="text-black block lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                                 </svg>
                             </Link>
                             <MenuNav navigation={secondaryNavigation} />
+                            {/* <div className="ml-4 flow-root lg:ml-8">
+                                    <ButtonCart />
+                                </div> */}
+                        </div>
+                        <div className="flex flex-1 items-center justify-end gap-3  text-black pr-4">
+                            <Contactenos/>
                             {/* <div className="ml-4 flow-root lg:ml-8">
                                     <ButtonCart />
                                 </div> */}
