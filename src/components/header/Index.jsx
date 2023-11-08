@@ -47,7 +47,7 @@ export default async function CustomHeader() {
         <nav aria-label="Top">
             <div className=" h-auto bg-white">
                 <div className="w-full h-auto p-4">
-                    <Image className="w-full h-[218px] rounded-md" src={"/cintillosuperior.jpg"} width={1000} height={100} alt={'no image'} />
+                    <Image className="w-full h-[118px] rounded-md" src={"/cintillosuperior.jpg"} width={1000} height={100} alt={'no image'} />
                 </div>
                 <div className="mx-auto flex items-start justify-between w-full h-full ">
                     {/* <div> */}
@@ -58,12 +58,11 @@ export default async function CustomHeader() {
                         <div className="hidden lg:flex lg:flex-1 lg:items-center pl-4">
                             <Link className='flex items-center px-4 py-1 gap-2' href="/">
                                 <Image
-                                    src={logoEspiral}
-                                    width={50}
-                                    height={50}
+                                    src={'/logosinfondo.png'}
+                                    width={150}
+                                    height={100}
                                     alt=''
                                 />
-                                <span className="text-lg font-bold  text-black uppercase">Corpoelec Industrial</span>
                             </Link>
                         </div>
 

@@ -310,7 +310,17 @@ export default function FrontPage() {
 				</section> */}
 
 				{/* Featured section */}
-				<h2 data-aos="fade-up" className="text-3xl mt-20 font-bold text-center tracking-tight sm:text-4xl">
+				<div className='h-48 flex items-center justify-around'>
+					<Image src={'/MPPEE.png'} width={200} height={200} alt='imagen no disponible'/>
+					<Image src={'/logounerven.png'} width={200} height={200} alt='imagen no disponible'/>
+					<Image src={'/vietverdetransparente.png'} width={200} height={200} alt='imagen no disponible'/>
+					<Image src={'/logosinfondo.png'} width={250} height={250} alt='imagen no disponible'/>
+				</div>
+				<div className='h-96'>
+					<div></div>
+					<div></div>
+				</div>
+				<h2 data-aos="fade-up" className="text-3xl font-bold text-center tracking-tight sm:text-4xl">
 					<span className="block sm:inline">Nuestros Productos</span>
 				</h2>
 				<div data-aos="fade-up" className='my-10 h-72 p-10 '>
