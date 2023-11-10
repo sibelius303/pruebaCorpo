@@ -28,3 +28,56 @@
     )
     rgb(var(--background-start-rgb));
 } */
+
+
+.miDiv {
+  @apply w-64 h-80 bg-gray-300 transition duration-700 ease-in;
+  background-color: #65BCE0;
+  /* background-image: url('ruta/de/tu/imagen-original.jpg');
+  background-size: cover; */
+}
+
+.hover\:miDivHover:hover {
+  @apply bg-gray-600 transition duration-700 ease-in transform scale-y-110;
+  background-image: url('../../public/imagenledPage.jpg');
+  background-size: cover;
+}
+
+.miDiv2 {
+  @apply w-64 h-80 bg-gray-300 transition duration-700 ease-in;
+  background-color: #65BCE0;
+  /* background-image: url('ruta/de/tu/imagen-original.jpg');
+  background-size: cover; */
+}
+
+.hover\:miDivHover2:hover {
+  @apply bg-gray-600 transition duration-700 ease-in transform scale-y-110;
+  background-image: url('../../public/imagenledPage.jpg');
+  background-size: cover;
+}
+
+.miDiv3 {
+  @apply w-64 h-80 bg-gray-300 transition duration-700 ease-in;
+  background-color: #65BCE0;
+  /* background-image: url('ruta/de/tu/imagen-original.jpg');
+  background-size: cover; */
+}
+
+.hover\:miDivHover3:hover {
+  @apply bg-gray-600 transition duration-700 ease-in transform scale-y-110;
+  background-image: url('../../public/imagenpanelPage.jpg');
+  background-size: cover;
+}
+
+.miDiv4 {
+  @apply w-64 h-80 bg-gray-300 transition duration-700 ease-in;
+  background-color: #65BCE0;
+  /* background-image: url('ruta/de/tu/imagen-original.jpg');
+  background-size: cover; */
+}
+
+.hover\:miDivHover4:hover {
+  @apply bg-gray-600 transition duration-700 ease-in transform scale-y-110;
+  background-image: url('../../public/iamgenalumbradoPage.jpg');
+  background-size: cover;
+}

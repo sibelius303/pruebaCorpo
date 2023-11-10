@@ -366,20 +366,40 @@ export default function FrontPage() {
 						</button>
 					</div>
 				</div>
-				<div style={{backgroundColor: '#172168'}} className='h-96 w-full mt-10 relative '> 
-					<div style={{backgroundColor: '#65BCE0'}} className='absolute h-80 w-64 top-24 left-10 rounded-lg'>
+				<div style={{ backgroundColor: '#172168' }} className='h-96 w-full mt-10 relative '>
+					<div className='absolute h-80 w-64 top-24 left-10 flex flex-col rounded-lg miDiv hover:miDivHover'>
+						<div className='h-1/2 w-full'>
 
+						</div>
+						<div className='h-1/2 w-full text-white flex-auto items-end'>
+							<h1 className='text-xl font-bold'>LED</h1>
+							<p>Descubre mas</p>
+						</div>
 					</div>
-					<div style={{backgroundColor: '#65BCE0'}} className='absolute h-80 w-64 top-24 left-96 rounded-lg'>
-						
+					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 left-96 rounded-lg miDiv4 hover:miDivHover4'>
+						<div className='h-1/2 w-full'>
+
+						</div>
+						<div className='h-1/2 w-full'>
+
+						</div>
 					</div>
-					<div style={{backgroundColor: '#65BCE0'}} className='absolute h-80 w-64 top-24 right-96 rounded-lg'>
-						
+					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 right-96 rounded-lg miDiv3 hover:miDivHover3'>
+						<div className='h-1/2 w-full'>
+
+						</div>
+						<div className='h-1/2 w-full'>
+
+						</div>
 					</div>
-					<div style={{backgroundColor: '#65BCE0'}} className='absolute h-80 w-64 top-24 right-10 rounded-lg'>
-						
+					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 right-10 rounded-lg'>
+						<div className='h-1/2 w-full'>
+
+						</div>
+						<div className='h-1/2 w-full'>
+
+						</div>
 					</div>
-					
 				</div>
 				{/* <h2 className="text-3xl font-bold text-center tracking-tight sm:text-4xl">
 					<span className="block sm:inline">Noticias</span>
