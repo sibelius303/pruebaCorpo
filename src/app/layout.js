@@ -36,9 +36,9 @@ export default function RootLayout({ children }) {
 				}
 				className={inter.className}>
 				<CustomHeader />
-				<div className="relative h-screen  px-4">
+				<div className="relative h-96  px-4">
 					{/* Decorative image and overlay */}
-					<div aria-hidden="true" className="absolute  px-4   inset-0 overflow-hidden">
+					<div aria-hidden="true" className="absolute px-4 inset-0 overflow-hidden">
 						<Image
 							src="/portadacatalogo2.jpg"
 							alt=""
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
 						/>
 					</div>
 					<div aria-hidden="true" className="absolute  mx-4 bg-slate-800  inset-0  opacity-50" />
-					<div className="relative mx-auto h-screen w-full flex     flex-col items-center justify-center px-6  text-center sm:py-16 lg:px-60">
+					<div className="relative mx-auto h-96 w-full flex flex-col items-center justify-center px-6  text-center sm:py-16 lg:px-60">
 						<Image
 							src="/logovolumetricoBlanco.png"
 							alt=""

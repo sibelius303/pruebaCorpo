@@ -216,7 +216,7 @@ export default function FrontPage() {
 	}, []);
 
 	return (
-		<div className="text-white">
+		<div className="text-black">
 			{/* Mobile menu */}
 
 
@@ -311,22 +311,83 @@ export default function FrontPage() {
 
 				{/* Featured section */}
 				<div className='h-48 flex items-center justify-around'>
-					<Image src={'/MPPEE.png'} width={200} height={200} alt='imagen no disponible'/>
-					<Image src={'/logounerven.png'} width={200} height={200} alt='imagen no disponible'/>
-					<Image src={'/vietverdetransparente.png'} width={200} height={200} alt='imagen no disponible'/>
-					<Image src={'/logosinfondo.png'} width={250} height={250} alt='imagen no disponible'/>
+					<Image src={'/MPPEE.png'} width={200} height={200} alt='imagen no disponible' />
+					<Image src={'/logounerven.png'} width={200} height={200} alt='imagen no disponible' />
+					<Image src={'/vietverdetransparente.png'} width={200} height={200} alt='imagen no disponible' />
+					<Image src={'/logosinfondo.png'} width={250} height={250} alt='imagen no disponible' />
 				</div>
-				<div className='h-96'>
-					<div></div>
-					<div></div>
+				<div className='h-96 w-full flex pl-4'>
+					<div className='w-1/2 flex flex-col items-center justify-center gap-y-5'>
+						<h1 className="text-xl font-bold">Pague su medidor</h1>
+						{/* <p>
+							Registrate para pagar tu medidor o hacerte aliado, Lorem ipsum dolor sit amet consectetur adipisicing elit. A error impedit magnam recusandae! Culpa in deleniti cumque incidunt nobis? Blanditiis ex laboriosam nemo illum eveniet. Cumque modi rem officia harum.
+						</p> */}
+						<button className='block w-full rounded-md border border-transparent bg-azulPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto'>
+							Pague su Medidor
+						</button>
+
+					</div>
+					<div className='w-1/2'>
+						<Image src={'/imagenmedidorPage.jpg'} width={700} height={450} alt='imagen no disponible' />
+					</div>
 				</div>
-				<h2 data-aos="fade-up" className="text-3xl font-bold text-center tracking-tight sm:text-4xl">
-					<span className="block sm:inline">Nuestros Productos</span>
+				<div className='h-96 w-full mt-10 relative'>
+					<div aria-hidden="true" className="absolute w-full  inset-0 overflow-hidden">
+						<Image
+							src="/bannercaracasiluminada.png"
+							alt=""
+							className="h-full w-full object-cover object-center "
+							width={1000}
+							height={1000}
+						/>
+					</div>
+					<div aria-hidden="true" className="absolute w-full  bg-slate-800  inset-0  opacity-50" />
+					<div aria-hidden="true" className="absolute w-full inset-0 flex flex-col items-center justify-center">
+						<div className="w-1/2 flex flex-col items-center gap-4">
+							<p className='text-white text-justify'>
+								Brindamos productos de máxima calidad y ecológicos,
+								especializados en materiales y equipos de iluminación en general para el hogar,
+								alumbrado público, iluminación industrial y comercial
+							</p>
+							<button className="block w-full rounded-3xl border border-transparent bg-azulPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto">
+								{'Conoce Nuestro Catalogo >'}
+							</button>
+						</div>
+					</div>
+				</div>
+				<div className='h-96 w-full text-black flex justify-center items-center'>
+					<div className="w-1/2 flex flex-col items-center gap-6">
+						<h3 className="text-3xl font bold">Si quieres ser aliado Registrate</h3>
+						<p className=' text-xl text-justify'>
+							Registrate para ser aliado y poder acceder a nuestros productos a precio mayorista y muchas cosas mas
+						</p>
+						<button className="block w-full rounded-3xl border border-transparent bg-azulPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto">
+							{'Registrarse >'}
+						</button>
+					</div>
+				</div>
+				<div style={{backgroundColor: '#172168'}} className='h-96 w-full mt-10 relative '> 
+					<div style={{backgroundColor: '#65BCE0'}} className='absolute h-80 w-64 top-24 left-10 rounded-lg'>
+
+					</div>
+					<div style={{backgroundColor: '#65BCE0'}} className='absolute h-80 w-64 top-24 left-96 rounded-lg'>
+						
+					</div>
+					<div style={{backgroundColor: '#65BCE0'}} className='absolute h-80 w-64 top-24 right-96 rounded-lg'>
+						
+					</div>
+					<div style={{backgroundColor: '#65BCE0'}} className='absolute h-80 w-64 top-24 right-10 rounded-lg'>
+						
+					</div>
+					
+				</div>
+				{/* <h2 className="text-3xl font-bold text-center tracking-tight sm:text-4xl">
+					<span className="block sm:inline">Noticias</span>
 				</h2>
-				<div data-aos="fade-up" className='my-10 h-72 p-10 '>
-					{/*  */}
+				<div className='my-10 h-72 p-10 '>
+					
 					<ProductSlider products={products} />
-					{/*  */}
+					
 				</div>
 				<div data-aos="fade-up" className='w-full flex justify-center'>
 					<button
@@ -335,7 +396,7 @@ export default function FrontPage() {
 					>
 						Ver Productos
 					</button>
-				</div>
+				</div> */}
 				<section
 					data-aos="fade-up"
 					aria-labelledby="social-impact-heading"
