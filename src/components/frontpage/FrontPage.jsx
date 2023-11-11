@@ -371,8 +371,8 @@ export default function FrontPage() {
 						<div className='h-1/2 w-full'>
 
 						</div>
-						<div className='h-1/2 w-full text-white flex-auto items-end'>
-							<h1 className='text-xl font-bold'>LED</h1>
+						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
+							<h1 className='text-2xl font-bold'>LED</h1>
 							<p>Descubre mas</p>
 						</div>
 					</div>
@@ -380,24 +380,30 @@ export default function FrontPage() {
 						<div className='h-1/2 w-full'>
 
 						</div>
-						<div className='h-1/2 w-full'>
-
+						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
+							<h1 className='text-2xl font-bold'>Alumbrado publico</h1>
+							<p>Descubre mas</p>
 						</div>
 					</div>
 					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 right-96 rounded-lg miDiv3 hover:miDivHover3'>
 						<div className='h-1/2 w-full'>
 
 						</div>
-						<div className='h-1/2 w-full'>
-
+						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
+							<div>
+								<h1 className='text-2xl font-bold'>Paneles</h1>
+								<h1 className='text-2xl font-bold'>solares</h1>
+							</div>
+							<p>Descubre mas</p>
 						</div>
 					</div>
 					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 right-10 rounded-lg'>
 						<div className='h-1/2 w-full'>
 
 						</div>
-						<div className='h-1/2 w-full'>
-
+						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
+							<h1 className='text-2xl font-bold'>Aerogenerador</h1>
+							<p>Descubre mas</p>
 						</div>
 					</div>
 				</div>
@@ -418,7 +424,6 @@ export default function FrontPage() {
 					</button>
 				</div> */}
 				<section
-					data-aos="fade-up"
 					aria-labelledby="social-impact-heading"
 					className={`mt-20 mx-auto max-w-7xl mb-10  shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}
 				>
