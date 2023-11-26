@@ -1,0 +1,56 @@
+"use client"
+import Slider from "react-slick";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+
+
+import BreakParrafe from "./BreakParrafe";
+
+export default function NewSlider({height = 300}) {
+    const [notices, setNotices] = useState(null)
+    useEffect(()=>{
+        if( !notices ) {
+            (async ()=>{
+                const response = await fetch(`${process.env.API_URL}/news`)
+                const data = await response.json()
+                if( (data) instanceof Array ) {
+                    setNotices( data )
+                }
+            })()
+        }
+    },[notices])
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false
+    };
+
+    return (
+        <div className="product-slider" style={{ overflowAnchor: "none" }}>
+            <div className="slider">
+                <Slider {...settings} >
+                    {notices && notices?.map((item, index) => (
+                        <BreakParrafe key={item._id} name={`noti-${index}`} content={item.descrip} size={9}>
+                            <span className="block px-2 overflow-hidden bg-white m-2 rounded-lg"  style={{ height:`${height}px` }}>
+                                <h3 className="font-medium mb-4 text-lg h-12">{item.title}</h3>
+                                <span className="flex flex-row gap-4 z-20 w-full h-1/3 overflow-hidden" >
+                                    <Image src={item.urlImage} alt="" width={200} height={200} className="w-1/3 h-full"/>
+                                    <p data-break={`noti-${index}`} className="w-2/3 h-full italic text-sm text-slate-500"></p>
+                                </span>
+                                <p data-break={`noti-${index}`} className="w-full p-2 h-full italic text-sm text-slate-500"></p>
+                            </span>
+                        </BreakParrafe>
+                    ))}
+                </Slider>
+            </div>
+        </div>
+    )
+}
+
