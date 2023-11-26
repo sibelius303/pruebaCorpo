@@ -39,6 +39,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 import Contactenos from '../Contactenos'
+import NewsSlider from '../NewsSlider'
 
 const currencies = ['BS', 'USD']
 const navigation = {
@@ -312,10 +313,11 @@ export default function FrontPage() {
 				{/* Featured section */}
 				<div className='h-48 flex items-center justify-around'>
 					<Image src={'/MPPEE.png'} width={200} height={200} alt='imagen no disponible' />
+					<Image src={'/logosinfondo.png'} width={250} height={250} alt='imagen no disponible' />
 					<Image src={'/logounerven.png'} width={200} height={200} alt='imagen no disponible' />
 					<Image src={'/vietverdetransparente.png'} width={200} height={200} alt='imagen no disponible' />
-					<Image src={'/logosinfondo.png'} width={250} height={250} alt='imagen no disponible' />
 				</div>
+				<NewsSlider/>
 				<div className='h-96 w-full flex pl-4'>
 					<div className='w-1/2 flex flex-col items-center justify-center gap-y-5'>
 						<h1 className="text-xl font-bold">Pague su medidor</h1>
