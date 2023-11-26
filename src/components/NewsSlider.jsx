@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 import BreakParrafe from "./BreakParrafe";
 
-export default function NewSlider({height = 300}) {
+export default function NewsSlider({height = 300}) {
     const [notices, setNotices] = useState(null)
     useEffect(()=>{
         if( !notices ) {
