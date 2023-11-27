@@ -33,7 +33,7 @@ export default function NewsSlider({height = 300}) {
     };
 
     return (
-        <div className="product-slider" style={{ overflowAnchor: "none" }}>
+        <div className="news-slider" style={{ overflowAnchor: "none" }}>
             <div className="slider">
                 <Slider {...settings} >
                     {notices && notices?.map((item, index) => (
