@@ -7,7 +7,7 @@ const nextConfig = {
     },
     images: {
         // remotePatterns: [{ protocol: "https:", hostname: "**" }],
-        domains: ["localhost", "fastly.picsum.photos", "picsum.photos", "tailwindui.com", "detallesorballo.com"],
+        domains: ["localhost", "fastly.picsum.photos", "picsum.photos", "tailwindui.com", "detallesorballo.com","www.lightsoftwareca.com"],
     },
     experimental: {
         serverActions: true,
