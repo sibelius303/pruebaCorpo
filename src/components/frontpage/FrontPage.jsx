@@ -318,21 +318,20 @@ export default function FrontPage() {
 					<Image src={'/vietverdetransparente.png'} width={200} height={200} alt='imagen no disponible' />
 				</div>
 				{/* <div className='h-[300px] w-full flex pl-4 border border-red-500'> */}
-					<NewsSlider />
+				<NewsSlider />
 				{/* </div> */}
 				<div className='h-96 w-full flex pl-4'>
 					<div className='w-1/2 flex flex-col items-center justify-center gap-y-5'>
-						<h1 className="text-xl font-bold">Pague su medidor</h1>
+						<h1 className="text-xl font-bold">Recuerda que puedes pagar tu servicio eléctrico de tu medidor</h1>
 						{/* <p>
 							Registrate para pagar tu medidor o hacerte aliado, Lorem ipsum dolor sit amet consectetur adipisicing elit. A error impedit magnam recusandae! Culpa in deleniti cumque incidunt nobis? Blanditiis ex laboriosam nemo illum eveniet. Cumque modi rem officia harum.
 						</p> */}
 						<button className='block w-full rounded-md border border-transparent bg-azulPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto'>
-							Pague su Medidor
+							¡Aquí!
 						</button>
-
 					</div>
 					<div className='w-1/2'>
-						<Image src={'/imagenmedidorPage.jpg'} width={700} height={450} alt='imagen no disponible' />
+						<Image src={'/corpoImagenes/medidor.jpg'} width={700} height={450} alt='imagen no disponible' />
 					</div>
 				</div>
 				<div className='h-96 w-full mt-10 relative'>
@@ -361,9 +360,13 @@ export default function FrontPage() {
 				</div>
 				<div className='h-96 w-full text-black flex justify-center items-center'>
 					<div className="w-1/2 flex flex-col items-center gap-6">
-						<h3 className="text-3xl font bold">Si quieres ser aliado Registrate</h3>
+						<h3 className="text-3xl font bold">¿Quieres ser nuestro Aliado Comercial?</h3>
 						<p className=' text-xl text-justify'>
-							Registrate para ser aliado y poder acceder a nuestros productos a precio mayorista y muchas cosas mas
+							Fabricamos productos de calidad, innovadores y eficientes
+							brindando soluciones, unificando fuerzas para conducir por el
+							camino de la superación económica e industrial.
+							Somos una empresa encargada de la comercialización de equipos
+							para su red eléctrica o sus proyectos con energías alternativas.
 						</p>
 						<button className="block w-full rounded-3xl border border-transparent bg-azulPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto">
 							{'Registrarse >'}
@@ -395,8 +398,7 @@ export default function FrontPage() {
 						</div>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<div>
-								<h1 className='text-2xl font-bold'>Paneles</h1>
-								<h1 className='text-2xl font-bold'>solares</h1>
+								<h1 className='text-2xl font-bold'>Transformadores</h1>
 							</div>
 							<p>Descubre mas</p>
 						</div>
@@ -406,7 +408,7 @@ export default function FrontPage() {
 
 						</div>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
-							<h1 className='text-2xl font-bold'>Aerogenerador</h1>
+							<h1 className='text-2xl font-bold'>Energias Renovables</h1>
 							<p>Descubre mas</p>
 						</div>
 					</div>

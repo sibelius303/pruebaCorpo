@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
 					{/* Decorative image and overlay */}
 					<div aria-hidden="true" className="absolute px-4 inset-0 overflow-hidden">
 						<Image
-							src="/portadacatalogo2.jpg"
+							src="/corpoImagenes/bannerpagweg.jpg"
 							alt=""
 							className="h-full w-full object-cover object-center "
 							width={1000}
