@@ -86,7 +86,16 @@ export default function ProductList({ products }) {
 			<div className="mt-20">
 				{
 					product === 0 && <div className="w-full">
-						<h1 className='text-center text-4xl font-bold'>Alumbrado Publico</h1>
+						<div className=" w-1/2">
+							<h1 className="text-5xl pl-52 w-full font-bold bg-blue-900 text-white px-5">
+								Iluminacion
+							</h1>
+						</div>
+						<div className="flex justify-end pr-52">
+							<h1 className="text-5xl w-[500px] font-bold text-red-500 px-5">
+								Alumbrado Publico
+							</h1>
+						</div>
 						<div className='w-full flex'>
 							<div className="w-1/2 py-10 flex flex-col items-center justify-between">
 								<div>
@@ -105,7 +114,7 @@ export default function ProductList({ products }) {
 							</div>
 							<div className="w-1/2 py-10 flex flex-col items-center justify-center">
 								<div className='flex'>
-									<Image src={'/corpoImagenes/luminariasplashsinfondo.png'}
+									<Image src={'/corpoImagenes/liminariasplashsinfondo.png'}
 										width={300}
 										height={300}
 										className='rounded-md'
@@ -114,7 +123,16 @@ export default function ProductList({ products }) {
 								</div>
 							</div>
 						</div>
-						<h1 className='text-center text-4xl font-bold'>Luminarias LED Solares</h1>
+						<div className=" w-1/2">
+							<h1 className="text-5xl pl-52 w-full font-bold bg-blue-900 text-white px-5">
+								Luminarias
+							</h1>
+						</div>
+						<div className="flex justify-end pr-52">
+							<h1 className="text-5xl w-[500px] font-bold text-red-500 px-5">
+								LED Solares
+							</h1>
+						</div>
 						<div className='w-full flex'>
 							<div className="w-1/2 py-10 flex flex-col items-center justify-between">
 								<div>
@@ -193,8 +211,17 @@ export default function ProductList({ products }) {
 				}
 				{
 					product === 1 && <div>
-						<div className='  p-5 mt-20 rounded-2xl shadow-2xl'>
-							<h1 className='text-center text-4xl font-bold my-10'>Luminarias LED</h1>
+						<div className=" w-1/2">
+							<h1 className="text-5xl pl-52 w-full font-bold bg-blue-900 text-white px-5">
+								Luminarias
+							</h1>
+						</div>
+						<div className="flex justify-end pr-52">
+							<h1 className="text-5xl w-[500px] font-bold text-red-500 px-5">
+								LED
+							</h1>
+						</div>
+						<div className='  p-5 mt-20'>
 							<div className='flex h-1/2'>
 								<div className='flex w-1/2'>
 									<div className='w-1/2 p-2 h-[300px]'>
