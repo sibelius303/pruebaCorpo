@@ -41,8 +41,8 @@ export default function NewsSlider({height = 300}) {
                         <BreakParrafe key={item._id} name={`noti-${index}`} content={item.descrip} size={9}>
                             <Link href={`/noticias/${item._id}`}  className="block px-2 overflow-hidden bg-white m-2 rounded-lg" style={{ height:`${height}px` }}>
                                 <h3 className="font-medium mb-4 text-lg h-12">{item.title}</h3>
-                                <span className="flex flex-row justify-end relative h-0" style={{ top:`${2*height/3}px` }}>
-                                    <span className="bg-black text-white py-1 px-5 rounded-md shadow-md absolute bg-opacity-70 hover:bg-opacity-100">Leer mas</span>
+                                <span className="flex flex-row justify-center relative h-0" style={{ top:`${2*height/3}px` }}>
+                                    <span className="bg-black text-white py-2 px-10 text-lg rounded-md shadow-md absolute bg-opacity-70 hover:bg-opacity-100 -top-8">Leer mas</span>
                                 </span>
                                 <span className="flex flex-row gap-4 z-20 w-full h-1/3 overflow-hidden" >
                                     <Image src={item.urlImage} alt="" width={200} height={200} className="w-1/3 h-full"/>
