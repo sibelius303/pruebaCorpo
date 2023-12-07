@@ -375,8 +375,14 @@ export default function FrontPage() {
 				</div>
 				<div style={{ backgroundColor: '#172168' }} className='h-96 w-full mt-10 relative '>
 					<div className='absolute h-80 w-64 top-24 left-10 flex flex-col rounded-lg miDiv hover:miDivHover'>
-						<div className='h-1/2 w-full'>
-
+						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
+							<Image
+								src={"/corpoImagenes/reflectorsinfondo.png"}
+								alt="imagen de muestra"
+								className=" h-[75px] w-[75px] object-cover object-center"
+								width={100}
+								height={100}
+							/>
 						</div>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<h1 className='text-2xl font-bold'>LED</h1>
@@ -384,17 +390,29 @@ export default function FrontPage() {
 						</div>
 					</div>
 					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 left-96 rounded-lg miDiv4 hover:miDivHover4'>
-						<div className='h-1/2 w-full'>
-
+						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
+							<Image
+								src={"/corpoImagenes/alumbradosinfondo.png"}
+								alt="imagen de muestra"
+								className=" h-[125px] w-[75px] object-cover object-center"
+								width={100}
+								height={100}
+							/>
 						</div>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<h1 className='text-2xl font-bold'>Alumbrado publico</h1>
 							<p>Descubre mas</p>
 						</div>
 					</div>
-					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 right-96 rounded-lg miDiv3 hover:miDivHover3'>
-						<div className='h-1/2 w-full'>
-
+					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 right-96 rounded-lg miDiv2  hover:miDivHover2'>
+						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
+							<Image
+								src={"/corpoImagenes/transformadorsinfondo.png"}
+								alt="imagen de muestra"
+								className=" h-[125px] w-[75px] object-cover object-center"
+								width={100}
+								height={100}
+							/>
 						</div>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<div>
@@ -403,9 +421,15 @@ export default function FrontPage() {
 							<p>Descubre mas</p>
 						</div>
 					</div>
-					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 right-10 rounded-lg'>
-						<div className='h-1/2 w-full'>
-
+					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 miDiv3 hover:miDivHover3 w-64 top-24 right-10 rounded-lg'>
+						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
+							<Image
+								src={"/corpoImagenes/panelsinfondo.png"}
+								alt="imagen de muestra"
+								className=" h-[125px] w-[75px] object-cover object-center"
+								width={100}
+								height={100}
+							/>
 						</div>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<h1 className='text-2xl font-bold'>Energias Renovables</h1>
@@ -413,22 +437,7 @@ export default function FrontPage() {
 						</div>
 					</div>
 				</div>
-				{/* <h2 className="text-3xl font-bold text-center tracking-tight sm:text-4xl">
-					<span className="block sm:inline">Noticias</span>
-				</h2>
-				<div className='my-10 h-72 p-10 '>
-					
-					<ProductSlider products={products} />
-					
-				</div>
-				<div data-aos="fade-up" className='w-full flex justify-center'>
-					<button
-						onClick={() => { router.push(ROUTER_PATH.PRODUCTS) }}
-						className="block w-full rounded-md border border-transparent bg-azulPantone px-8 py-3 text-base font-medium text-white bg-opacity-80 hover:bg-opacity-100 sm:w-auto"
-					>
-						Ver Productos
-					</button>
-				</div> */}
+
 				<section
 					aria-labelledby="social-impact-heading"
 					className={`mt-20 mx-auto max-w-7xl mb-10  shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}

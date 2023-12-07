@@ -52,7 +52,7 @@
 
 .hover\:miDivHover2:hover {
   @apply bg-gray-600 transition duration-700 ease-in transform scale-y-110;
-  background-image: url('../../public/imagenledPage.jpg');
+  background-image: url('../../public/corpoImagenes/transformadormonofasico.jpeg');
   background-size: cover;
 }
 
