@@ -437,7 +437,6 @@ export default function FrontPage() {
 						</div>
 					</div>
 				</div>
-
 				<section
 					aria-labelledby="social-impact-heading"
 					className={`mt-20 mx-auto max-w-7xl mb-10  shadow-md px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8 ${showAll ? 'pt-96' : 'pt-5'}`}
