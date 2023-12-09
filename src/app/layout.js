@@ -58,6 +58,26 @@ export default function RootLayout({ children }) {
 						/>
 					</div>
 				</div>
+				<div className='h-48 hidden lg:flex items-center justify-around'>
+					<Image src={'/MPPEE.png'} width={200} height={200} alt='imagen no disponible' />
+					<Image src={'/logosinfondo.png'} width={250} height={250} alt='imagen no disponible' />
+					<Image src={'/logounerven.png'} width={200} height={200} alt='imagen no disponible' />
+					<Image src={'/vietverdetransparente.png'} width={200} height={200} alt='imagen no disponible' />
+				</div>
+				<div className='h-48 grid grid-cols-2 lg:hidden items-center justify-around'>
+					<div className='flex items-center justify-center'>
+						<Image src={'/MPPEE.png'} width={100} height={100} alt='imagen no disponible' />
+					</div>
+					<div className='flex items-center justify-center'>
+						<Image src={'/logosinfondo.png'} width={125} height={125} alt='imagen no disponible' />
+					</div>
+					<div className='flex items-center justify-center'>
+						<Image src={'/logounerven.png'} width={100} height={100} alt='imagen no disponible' />
+					</div>
+					<div className='flex items-center justify-center'>
+						<Image src={'/vietverdetransparente.png'} width={100} height={100} alt='imagen no disponible' />
+					</div>
+				</div>
 				{children}
 				{/* <div data-aos="fade-up" className={`mt-5 mx-auto max-w-7xl mb-20 flex justify-center items-center px-4 transition-all duration-500 ease-in-out sm:px-6 lg:px-8`}>
 					<Contactenos />
