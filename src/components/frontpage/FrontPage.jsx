@@ -281,7 +281,7 @@ export default function FrontPage() {
 						</button>
 					</div>
 				</div>
-				<div style={{ backgroundColor: '#172168' }} className='h-96 hidden w-full mt-10 lg:relative '>
+				<div style={{ backgroundColor: '#172168' }} className='h-96 hidden w-full mt-10 lg:block lg:relative '>
 					<div className='absolute h-80 w-64 top-24 left-10 flex flex-col rounded-lg miDiv hover:miDivHover'>
 						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 							<Image
