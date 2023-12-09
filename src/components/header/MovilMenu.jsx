@@ -9,13 +9,14 @@ import { mainNavigation, secondaryNavigation } from '@/tools/navigation';
 import { ROUTER_PATH } from '@/tools/constants';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import Contactenos from '../Contactenos';
 
 export default function MovilMenu() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const router = useRouter()
 
     return <div>
-        <button type="button" className="-ml-2 p-2 text-white" onClick={() => setMobileMenuOpen(true)}>
+        <button type="button" className=" p-2 text-white" onClick={() => setMobileMenuOpen(true)}>
             <span className="sr-only">Open menu</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
         </button>
@@ -43,7 +44,7 @@ export default function MovilMenu() {
                         leaveFrom="translate-x-0"
                         leaveTo="-translate-x-full"
                     >
-                        <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-gradient-to-r from-azulPantone to-rojoPantone pb-12 shadow-xl">
+                        <Dialog.Panel style={{ backgroundColor: "#BDBDBD" }} className="relative flex w-full max-w-xs flex-col justify-between overflow-y-auto  pb-12 shadow-xl">
                             <div className="flex justify-between px-4 pb-2 pt-5">
                                 <button onClick={() => { router.push(ROUTER_PATH.HOME); setMobileMenuOpen(false) }} className='text-white w-full text-lg font-bold flex items-center gap-2'>
                                     <Image
@@ -65,17 +66,15 @@ export default function MovilMenu() {
                             </div>
 
                             {/* Links */}
-                            <Tab.Group as="div" className="mt-2">
+                            {/* <Tab.Group as="div" className="mt-2">
                                 <Tab.Panels as={Fragment}>
                                 </Tab.Panels>
-                            </Tab.Group>
-
-                            {/* <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                                <MenuNav navigation={mainNavigation} movil onClick={()=>setMobileMenuOpen(false)}/>
-                            </div> */}
-
-                            <div onClick={() => setMobileMenuOpen(false)} className="space-y-6 border-t border-gray-200 px-4 py-6">
-                                <MenuNav navigation={secondaryNavigation.map(item => ({ ...item, className: null }))} movil  />
+                            </Tab.Group> */}
+                            <div onClick={() => setMobileMenuOpen(false)} className="space-y-12 border-t  px-4 py-6">
+                                <MenuNav navigation={secondaryNavigation.map(item => ({ ...item, className: null }))} movil />
+                            </div>
+                            <div className="flex lg:hidden items-center justify-center gap-3  text-black pr-4">
+                                <Contactenos />
                             </div>
                         </Dialog.Panel>
                     </Transition.Child>

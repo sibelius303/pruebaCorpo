@@ -12,5 +12,4 @@ export const secondaryNavigation = [
     { name:'Ingresar', href:ROUTER_PATH.PRODUCTS, className:"hidden text-xs font-bold    text-black lg:block" },
     { name:'Catalogo', href:ROUTER_PATH.PRODUCTS, className:"hidden text-xs font-bold    text-black lg:block" },
     { name:'Noticias', href:ROUTER_PATH.PRODUCTS, className:"hidden text-xs font-bold    text-black lg:block" },
-    { name:'Sobre Nosotros', href:ROUTER_PATH.ABOUT, className:"hidden text-xs font-bold   text-black lg:block" }
 ]

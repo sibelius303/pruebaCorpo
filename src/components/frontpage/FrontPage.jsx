@@ -268,8 +268,8 @@ export default function FrontPage() {
 				</div>
 				<div className='h-96 w-full text-black flex justify-center items-center'>
 					<div className="w-full p-4 lg:p-0 lg:w-1/2 flex flex-col items-center gap-6">
-						<h3 className="text-lg lg:text-3xl font bold">¿Quieres ser nuestro Aliado Comercial?</h3>
-						<p className=' text-md lg:text-xl text-justify'>
+						<h3 className="text-lg lg:text-xl xl:text-3xl font bold">¿Quieres ser nuestro Aliado Comercial?</h3>
+						<p className=' text-md lg:text-lg xl:text-xl text-justify'>
 							Fabricamos productos de calidad, innovadores y eficientes
 							brindando soluciones, unificando fuerzas para conducir por el
 							camino de la superación económica e industrial.
@@ -282,7 +282,7 @@ export default function FrontPage() {
 					</div>
 				</div>
 				<div style={{ backgroundColor: '#172168' }} className='h-96 hidden w-full mt-10 lg:block lg:relative '>
-					<div className='absolute h-80 w-64 top-24 left-10 flex flex-col rounded-lg miDiv hover:miDivHover'>
+					<div className='absolute h-80 lg:w-52 xl:w-52 top-24 lg:left-10  flex flex-col rounded-lg miDiv hover:miDivHover'>
 						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 							<Image
 								src={"/corpoImagenes/reflectorsinfondo.png"}
@@ -297,7 +297,7 @@ export default function FrontPage() {
 							<p>Descubre mas</p>
 						</div>
 					</div>
-					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 left-96 rounded-lg miDiv4 hover:miDivHover4'>
+					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:left-72 xl:left-96 rounded-lg miDiv4 hover:miDivHover4'>
 						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 							<Image
 								src={"/corpoImagenes/alumbradosinfondo.png"}
@@ -312,7 +312,7 @@ export default function FrontPage() {
 							<p>Descubre mas</p>
 						</div>
 					</div>
-					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 w-64 top-24 right-96 rounded-lg miDiv2  hover:miDivHover2'>
+					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:right-72 xl:right-96 rounded-lg miDiv2  hover:miDivHover2'>
 						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 							<Image
 								src={"/corpoImagenes/transformadorsinfondo.png"}
@@ -324,12 +324,12 @@ export default function FrontPage() {
 						</div>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<div>
-								<h1 className='text-2xl font-bold'>Transformadores</h1>
+								<h1 className=' lg:text-xl xl:text-2xl font-bold'>Transformadores</h1>
 							</div>
 							<p>Descubre mas</p>
 						</div>
 					</div>
-					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 miDiv3 hover:miDivHover3 w-64 top-24 right-10 rounded-lg'>
+					<div style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 miDiv3 hover:miDivHover3 lg:w-52 xl:w-64 top-24 lg:right-10 rounded-lg'>
 						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 							<Image
 								src={"/corpoImagenes/panelsinfondo.png"}

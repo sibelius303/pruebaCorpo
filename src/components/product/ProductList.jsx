@@ -20,7 +20,7 @@ export default function ProductList({ products }) {
 	return (
 		<div className=" h-auto pt-10">
 			<h1 className='text-2xl text-center font-bold'>Categorias</h1>
-			<div style={{ backgroundColor: '#172168' }} className='hidden h-auto lg:h-96 w-full mt-10 lg:relative lg:flex lg:flex-col '>
+			{/* <div style={{ backgroundColor: '#172168' }} className='hidden h-auto lg:h-96 w-full mt-10 lg:relative lg:flex lg:flex-col '>
 				<div onClick={() => setProduct(1)} className='lg:absolute h-auto lg:h-80 w-full lg:w-64 lg:top-24 lg:left-10 flex lg:flex-col rounded-lg miDiv hover:miDivHover'>
 					<div className='lg:h-1/2 w-full lg:flex justify-end px-5 py-5'>
 						<Image
@@ -83,9 +83,73 @@ export default function ProductList({ products }) {
 						<p>Descubre mas</p>
 					</div>
 				</div>
+			</div> */}
+			<div style={{ backgroundColor: '#172168' }} className='h-96 hidden w-full mt-10 lg:block lg:relative '>
+				<div onClick={() => setProduct(1)} className='absolute h-80 lg:w-52 xl:w-52 top-24 lg:left-10  flex flex-col rounded-lg miDiv hover:miDivHover'>
+					<div className='h-1/2 w-full flex justify-end px-5 py-5'>
+						<Image
+							src={"/corpoImagenes/reflectorsinfondo.png"}
+							alt="imagen de muestra"
+							className=" h-[75px] w-[75px] object-cover object-center"
+							width={100}
+							height={100}
+						/>
+					</div>
+					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
+						<h1 className='text-2xl font-bold'>LED</h1>
+						<p>Descubre mas</p>
+					</div>
+				</div>
+				<div onClick={() => setProduct(0)} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:left-72 xl:left-96 rounded-lg miDiv4 hover:miDivHover4'>
+					<div className='h-1/2 w-full flex justify-end px-5 py-5'>
+						<Image
+							src={"/corpoImagenes/alumbradosinfondo.png"}
+							alt="imagen de muestra"
+							className=" h-[125px] w-[75px] object-cover object-center"
+							width={100}
+							height={100}
+						/>
+					</div>
+					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
+						<h1 className='text-2xl font-bold'>Alumbrado publico</h1>
+						<p>Descubre mas</p>
+					</div>
+				</div>
+				<div onClick={() => setProduct(3)} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:right-72 xl:right-96 rounded-lg miDiv2  hover:miDivHover2'>
+					<div className='h-1/2 w-full flex justify-end px-5 py-5'>
+						<Image
+							src={"/corpoImagenes/transformadorsinfondo.png"}
+							alt="imagen de muestra"
+							className=" h-[125px] w-[75px] object-cover object-center"
+							width={100}
+							height={100}
+						/>
+					</div>
+					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
+						<div>
+							<h1 className=' lg:text-xl xl:text-2xl font-bold'>Transformadores</h1>
+						</div>
+						<p>Descubre mas</p>
+					</div>
+				</div>
+				<div onClick={() => setProduct(2)} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 miDiv3 hover:miDivHover3 lg:w-52 xl:w-64 top-24 lg:right-10 rounded-lg'>
+					<div className='h-1/2 w-full flex justify-end px-5 py-5'>
+						<Image
+							src={"/corpoImagenes/panelsinfondo.png"}
+							alt="imagen de muestra"
+							className=" h-[125px] w-[75px] object-cover object-center"
+							width={100}
+							height={100}
+						/>
+					</div>
+					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
+						<h1 className='text-2xl font-bold'>Energias Renovables</h1>
+						<p>Descubre mas</p>
+					</div>
+				</div>
 			</div>
 			<div style={{ backgroundColor: '#172168' }} className=' h-auto lg:h-96 w-full mt-10 lg:hidden lg:relative '>
-				<div onClick={() => setProduct(1)} style={{ backgroundColor: '#65BCE0' }}  className=''>
+				<div onClick={() => setProduct(1)} style={{ backgroundColor: '#65BCE0' }} className=''>
 					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 						<h1 className='text-2xl font-bold'>LED</h1>
 						<p className='text-end'>Descubre mas</p>
@@ -384,7 +448,7 @@ export default function ProductList({ products }) {
 							</h1>
 						</div>
 
-						<div  className='flex flex-col mb-10 lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
+						<div className='flex flex-col mb-10 lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
 							<div className='w-full order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
 								<div className=' h-1/2'>
 									<Image src={'/ImagesCadeteSiempre/transf003.jpeg'} className='w-full h-auto' width={400} height={150} />

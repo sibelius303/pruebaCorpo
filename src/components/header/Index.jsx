@@ -46,15 +46,16 @@ export default async function CustomHeader() {
 
         <nav aria-label="Top">
             <div className=" h-auto bg-white">
-                <div className="w-full h-auto p-4">
+                <div className="w-full hidden lg:block h-auto p-4">
                     <Image className="w-full h-[118px] rounded-md" src={"/cintillosuperior.jpg"} width={1000} height={100} alt={'no image'} />
                 </div>
+                <div className="w-full h-auto lg:hidden p-4">
+                    <Image className="h-[118px] rounded-md" src={"/cintillosuperior.jpg"} width={500} height={100} alt={'no image'} />
+                </div>
                 <div className="mx-auto flex items-start justify-between w-full h-full ">
-                    {/* <div> */}
                     <div style={
-                        //{ backgroundColor: '#e3e4e5' }
                         estiloComponente
-                    } className="flex h-16 w-full items-center justify-between">
+                    } className="flex h-36 lg:h-16 w-full items-center justify-between">
                         <div className="hidden lg:flex lg:flex-1 lg:items-center pl-4">
                             <Link className='flex items-center px-4 py-1 gap-2' href="/">
                                 <Image
@@ -65,38 +66,19 @@ export default async function CustomHeader() {
                                 />
                             </Link>
                         </div>
-
-                        {/* <div className="hidden h-full lg:flex">
-                                <div className="inset-x-0 bottom-0 px-4">
-                                    <div className="flex h-full justify-center space-x-8">
-                                        <MenuNav navigation={mainNav} />
-                                    </div>
-                                </div>
-                            </div> */}
-
                         <div className="flex flex-1 items-center lg:hidden">
-                            <MovilMenu />
+                            <MovilMenu/>
                         </div>
-
                         <div className="flex flex-1 items-center justify-center gap-3  text-black pr-4">
-                            <Link href="/consulta" className="text-black block lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                                </svg>
-                            </Link>
                             <MenuNav navigation={secondaryNavigation} />
                             {/* <div className="ml-4 flow-root lg:ml-8">
                                     <ButtonCart />
                                 </div> */}
                         </div>
-                        <div className="flex flex-1 items-center justify-end gap-3  text-black pr-4">
+                        <div className="hidden lg:flex flex-1 items-center justify-end gap-3  text-black pr-4">
                             <Contactenos/>
-                            {/* <div className="ml-4 flow-root lg:ml-8">
-                                    <ButtonCart />
-                                </div> */}
                         </div>
                     </div>
-                    {/* </div> */}
                 </div>
             </div>
         </nav>
