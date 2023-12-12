@@ -12,13 +12,14 @@ import Contactenos from '@/components/Contactenos';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
-	const estiloComponente = {
-		backgroundImage: 'url("/fondo2.jpg")',
+
+	const estiloCintilloGris = {
+		backgroundImage: 'url("/cintillogris.jpg")',
 		backgroundSize: 'cover',
 		backgroundPosition: 'center',
-		backgroundRepeat: 'repeat',
+		backgroundRepeat: 'noRepeat',
 		width: '100%',
-		height: '100vh',
+		height: '50%',
 	};
 
 	return (
@@ -42,12 +43,12 @@ export default function RootLayout({ children }) {
 						<Image
 							src="/corpoImagenes/bannerpagweg.jpg"
 							alt=""
-							className="h-full w-full object-cover object-center "
-							width={1000}
-							height={1000}
+							className="h-full"
+							width={1300}
+							height={1200}
 						/>
 					</div>
-					<div aria-hidden="true" className="absolute  mx-4 bg-slate-800  inset-0  opacity-50" />
+					{/* <div aria-hidden="true" className="absolute  mx-4 bg-slate-800  inset-0  opacity-50" />
 					<div className="relative mx-auto h-96 w-full flex flex-col items-center justify-center px-6  text-center sm:py-16 lg:px-60">
 						<Image
 							src="/logovolumetricoBlanco.png"
@@ -56,14 +57,21 @@ export default function RootLayout({ children }) {
 							width={1000}
 							height={1000}
 						/>
+					</div> */}
+				</div>
+				<div className="mx-auto flex items-start justify-between w-full h-full ">
+					<div style={
+						estiloCintilloGris
+					} className="flex w-full items-center justify-between">
+						<div className='w-full py-5 hidden lg:flex items-center justify-around'>
+							<Image src={'/corpoImagenes/vietvensinfondorecortada.png'} width={200} height={50} alt='imagen no disponible' />
+							<Image src={'/MPPEE.png'} width={200} height={50} alt='imagen no disponible' />
+							<Image src={'/corpoImagenes/unervensinfondorecortada.png'} width={200} height={50} alt='imagen no disponible' />
+							{/* <Image src={'/logosinfondo.png'} width={250} height={250} alt='imagen no disponible' /> */}
+						</div>
 					</div>
 				</div>
-				<div className='h-48 hidden lg:flex items-center justify-around'>
-					<Image src={'/MPPEE.png'} width={200} height={200} alt='imagen no disponible' />
-					<Image src={'/logosinfondo.png'} width={250} height={250} alt='imagen no disponible' />
-					<Image src={'/logounerven.png'} width={200} height={200} alt='imagen no disponible' />
-					<Image src={'/vietverdetransparente.png'} width={200} height={200} alt='imagen no disponible' />
-				</div>
+
 				<div className='h-48 grid grid-cols-2 lg:hidden items-center justify-around'>
 					<div className='flex items-center justify-center'>
 						<Image src={'/MPPEE.png'} width={100} height={100} alt='imagen no disponible' />

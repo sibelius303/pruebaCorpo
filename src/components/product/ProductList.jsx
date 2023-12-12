@@ -88,11 +88,11 @@ export default function ProductList({ products }) {
 				<div onClick={() => setProduct(1)} className='absolute h-80 lg:w-52 xl:w-52 top-24 lg:left-10  flex flex-col rounded-lg miDiv hover:miDivHover'>
 					<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 						<Image
-							src={"/corpoImagenes/reflectorsinfondo.png"}
+							src={"/corpoImagenes/lamparaledsinfondo.png"}
 							alt="imagen de muestra"
-							className=" h-[75px] w-[75px] object-cover object-center"
-							width={100}
-							height={100}
+							className=" h-[150px] w-[150px] object-cover object-center"
+							width={200}
+							height={200}
 						/>
 					</div>
 					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
@@ -105,9 +105,9 @@ export default function ProductList({ products }) {
 						<Image
 							src={"/corpoImagenes/alumbradosinfondo.png"}
 							alt="imagen de muestra"
-							className=" h-[125px] w-[75px] object-cover object-center"
+							className=" h-[175px] w-[100px] object-cover object-center"
 							width={100}
-							height={100}
+							height={50}
 						/>
 					</div>
 					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
@@ -120,7 +120,7 @@ export default function ProductList({ products }) {
 						<Image
 							src={"/corpoImagenes/transformadorsinfondo.png"}
 							alt="imagen de muestra"
-							className=" h-[125px] w-[75px] object-cover object-center"
+							className=" h-[175px] w-[150px] object-cover object-center"
 							width={100}
 							height={100}
 						/>
@@ -137,7 +137,7 @@ export default function ProductList({ products }) {
 						<Image
 							src={"/corpoImagenes/panelsinfondo.png"}
 							alt="imagen de muestra"
-							className=" h-[125px] w-[75px] object-cover object-center"
+							className=" h-[150px] w-[150px] object-cover object-center"
 							width={100}
 							height={100}
 						/>
@@ -179,27 +179,22 @@ export default function ProductList({ products }) {
 			<div className="mt-20">
 				{
 					product === 0 && <div className="w-full">
-						<div className=" w-1/2">
-							<h1 className="text-2xl pl-10 lg:text-5xl lg:pl-52 w-full font-bold bg-blue-900 text-white px-5">
-								Iluminacion
-							</h1>
-						</div>
-						<div className="flex justify-end pr-10 lg:pr-52">
-							<h1 className=" text-2xl  lg:text-5xl lg:w-[500px] font-bold text-red-500 px-5">
+						<div className=" flex justify-center w-full ">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl  w-auto font-bold bg-blue-900 text-white text-center">
 								Alumbrado Publico
 							</h1>
 						</div>
 						<div className='w-full flex flex-col lg:flex-row'>
-							<div className="w-full gap-5  py-10 flex flex-col items-center justify-between">
+							<div className="w-1/2 gap-5  py-10 flex flex-col items-center justify-between">
 								<div>
 									<h1 className='text-center text-lg lg:text-2xl font-bold'>Luminaria Tipo Splash</h1>
 								</div>
 								<div>
-									<p className='font-bold lg:text-xl '>AC100-265V</p>
-									<p className='font-bold text-md lg:text-xl '>100W</p>
-									<p className='font-bold text-md lg:text-xl '>150W</p>
-									<p className='font-bold text-md lg:text-xl '>200W</p>
-									<p className='font-bold text-md lg:text-xl '>300W</p>
+									<p className=' lg:text-xl '>AC100-265V</p>
+									<p className=' text-md lg:text-xl '>100W</p>
+									<p className=' text-md lg:text-xl '>150W</p>
+									<p className=' text-md lg:text-xl '>200W</p>
+									<p className=' text-md lg:text-xl '>300W</p>
 								</div>
 								<div>
 									<p className='font-bold text-md lg:text-2xl '>Garantía de 3 años</p>
@@ -207,23 +202,18 @@ export default function ProductList({ products }) {
 							</div>
 							<div className="w-full lg:w-1/2 py-10 flex flex-col items-center justify-center">
 								<div className='flex'>
-									<Image src={'/corpoImagenes/liminariasplashsinfondo.png'}
+									<Image src={'/corpoImagenes/LuminariasdeAlumbradoPúblicoSinFondo.png'}
 										width={300}
-										height={300}
+										height={400}
 										className='rounded-md'
 										alt='imagen no disponible'
 									/>
 								</div>
 							</div>
 						</div>
-						<div className=" w-1/2">
-							<h1 className="text-2xl pl-10 lg:text-5xl lg:pl-52 w-full font-bold bg-blue-900 text-white px-5">
-								Luminarias
-							</h1>
-						</div>
-						<div className="flex justify-end pr-10 lg:pr-52">
-							<h1 className=" text-2xl  lg:text-5xl lg:w-[500px] font-bold text-red-500 px-5">
-								LED Solares
+						<div className=" w-full flex justify-center">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								Luminarias LED Solares
 							</h1>
 						</div>
 						<div className='w-full flex flex-col lg:flex-row'>
@@ -232,8 +222,8 @@ export default function ProductList({ products }) {
 									<h1 className='text-center text-lg lg:text-2xl font-bold'>LED Solar Street Light</h1>
 								</div>
 								<div>
-									<p className='font-bold text-md lg:text-xl '>250W</p>
-									<p className='font-bold text-md lg:text-xl '>6500k</p>
+									<p className=' text-md lg:text-xl '>250W</p>
+									<p className=' text-md lg:text-xl '>6500k</p>
 								</div>
 								<div>
 									<p className='font-bold text-lg lg:text-2xl '>Garantía de 2 años</p>
@@ -241,32 +231,19 @@ export default function ProductList({ products }) {
 							</div>
 							<div className="w-full lg:w-1/2 pb-5 lg:py-10 flex flex-col items-center justify-center">
 								<div className='flex h-[300px]'>
-									<Image src={'/corpoImagenes/alumbradosinfondo.png'}
+									<Image src={'/corpoImagenes/LEDSolarStreetLightSinFondo.png'}
 										width={300}
-										height={200}
-										className='rounded-md'
-										alt='imagen no disponible'
-									/>
-									<Image src={'/corpoImagenes/ledsolarsinfondoposterior.png'}
-										width={300}
-										height={200}
+										height={400}
 										className='rounded-md'
 										alt='imagen no disponible'
 									/>
 								</div>
-
 							</div>
 						</div>
 						<div className='w-full flex flex-col lg:flex-row'>
 							<div className="w-full order-2 lg:order-1 lg:w-1/2 pb-5 lg:py-10 flex flex-col items-center justify-center">
 								<div className='flex flex-col lg:flex-row lg:h-[300px]'>
-									<Image src={'/corpoImagenes/ledsolarredondasinfondo.png'}
-										width={300}
-										height={200}
-										className='rounded-md'
-										alt='imagen no disponible'
-									/>
-									<Image src={'/corpoImagenes/ledsolarredondasinfondoposterior.png'}
+									<Image src={'/corpoImagenes/LEDSolarLightRedondaSinFondo.png'}
 										width={300}
 										height={200}
 										className='rounded-md'
@@ -279,8 +256,8 @@ export default function ProductList({ products }) {
 									<h1 className='text-center text-lg lg:text-2xl font-bold'>LED Solar Light Redonda</h1>
 								</div>
 								<div>
-									<p className='font-bold text-md lg:text-xl '>250W</p>
-									<p className='font-bold text-md lg:text-xl '>6500k</p>
+									<p className='text-md lg:text-xl '>250W</p>
+									<p className='text-md lg:text-xl '>6500k</p>
 								</div>
 								<div>
 									<p className='font-bold text-lg lg:text-2xl '>Garantía de 2 años</p>
@@ -304,23 +281,18 @@ export default function ProductList({ products }) {
 				}
 				{
 					product === 1 && <div>
-						<div className=" w-1/2">
-							<h1 className="text-2xl pl-10 lg:text-5xl lg:pl-52 w-full font-bold bg-blue-900 text-white px-5">
-								Luminarias
+						<div className="w-full flex justify-center ">
+							<h1 className="text-2xl pl-10 uppercase lg:text-4xl w-auto text-center font-bold bg-blue-900 text-white px-5">
+								Luminarias LED
 							</h1>
 						</div>
-						<div className="flex justify-center lg:justify-end pr-10 lg:pr-52">
-							<h1 className=" text-2xl  lg:text-5xl lg:w-[500px] font-bold text-red-500 px-5">
-								LED
-							</h1>
-						</div>
-						<div className='  p-5 lg:selection:mt-20'>
+						<div className='  p-5 lg:mt-20'>
 							<div className='flex flex-col lg:flex-row h-1/2'>
 								<div className='w-full lg:w-1/2'>
-									<h1 className='text-2xl p-5  text-red-500 text-center font-bold'>Bombillo Alta Tension</h1>
+									<h1 className='text-2xl p-5  text-black text-center font-bold'>Bombillo Alta Tension</h1>
 									<div className='flex flex-col lg:flex-row w-full '>
 										<div className=' w-full order-2 lg:order-1 lg:w-1/2 p-2 h-[300px]'>
-											<Image src={'/corpoImagenes/altatensionsinfondo.png'} className='w-full h-full' width={400} height={70} />
+											<Image src={'/corpoImagenes/BombilloAltaTensiónSinFondo.png'} className='w-full h-full' width={400} height={70} />
 										</div>
 										<div className='w-full order-1 lg:order-2 lg:w-1/2 h-[300px] flex flex-col justify-between p-5 text-black rounded-lg '>
 											<h1 className=' text-lg font-bold text-center lg:text-xl'> Capacidad</h1>
@@ -335,13 +307,13 @@ export default function ProductList({ products }) {
 
 								</div>
 								<div className='w-full lg:w-1/2'>
-									<h1 className='text-2xl p-5  text-red-500 text-center font-bold'>Bulbo LED 12w</h1>
+									<h1 className='text-2xl p-5  text-black text-center font-bold'>Bulbo LED</h1>
 									<div className='flex flex-col lg:flex-row w-full'>
 										<div className=' w-full order-2 lg:order-1 lg:w-1/2 p-2 h-[300px]'>
-											<Image src={'/corpoImagenes/bombillosinfondo.png'} className='w-full h-full' width={400} height={70} />
+											<Image src={'/corpoImagenes/BombilloLedSinFondo.png'} className='w-full h-full' width={400} height={70} />
 										</div>
 										<div className=' w-full order-1 lg:order-2 lg:w-1/2 h-[300px] p-5 lg:p-10 flex flex-col justify-between items-center text-black rounded-lg '>
-											<h1 className='text-lg lg:text-xl'> Capacidad</h1>
+											<h1 className='text-lg font-bold lg:text-xl'> Capacidad</h1>
 											<div className='text-md lg:text-xl'>
 												<p>100W</p>
 												<p>150W</p>
@@ -355,10 +327,10 @@ export default function ProductList({ products }) {
 							</div>
 							<div className='flex justify-center h-1/2'>
 								<div className='w-full lg:w-1/2'>
-									<h1 className='text-2xl p-5  text-red-500 text-center font-bold'>Bulbo LED 12w</h1>
+									<h1 className='text-2xl p-5  text-black text-center font-bold'>Lampara Led</h1>
 									<div className='flex flex-col lg:flex-row w-full'>
 										<div className='w-full lg:w-1/2 order-2 lg:order-1 p-2 h-[300px]'>
-											<Image src={'/corpoImagenes/removibleledsinfondo.png'} className='w-full h-full' width={400} height={70} />
+											<Image src={'/corpoImagenes/lamparaledsinfondo.png'} className='w-full h-full' width={400} height={70} />
 										</div>
 										<div className='w-full lg:w-1/2 order-1 lg:order-2 h-[300px] p-5 lg:p-10  flex flex-col justify-between items-center text-black rounded-lg '>
 											<h1 className='text-lg font-bold lg:text-xl'> Capacidad</h1>
@@ -372,8 +344,8 @@ export default function ProductList({ products }) {
 									</div>
 								</div>
 							</div>
-							<div className=" w-1/2">
-								<h1 className="text-2xl pl-4 lg:text-5xl lg:pl-52 w-full font-bold bg-blue-900 text-white px-5">
+							<div className="w-full flex justify-center ">
+								<h1 className="text-2xl pl-4 uppercase lg:text-4xl text-center  w-auto font-bold bg-blue-900 text-white px-5">
 									Reflectores
 								</h1>
 							</div>
@@ -393,7 +365,7 @@ export default function ProductList({ products }) {
 								</div>
 								<div className="w-full lg:w-1/2 pb-5 lg:py-10 flex flex-col items-center justify-center">
 									<div className='flex h-[300px]'>
-										<Image src={'/corpoImagenes/reflectorled.jpeg'}
+										<Image src={'/corpoImagenes/ReflectoresLedSinFondo.png'}
 											width={300}
 											height={200}
 											className='rounded-md'
@@ -403,15 +375,15 @@ export default function ProductList({ products }) {
 								</div>
 							</div>
 						</div>
-						<div className=" w-1/2">
-							<h1 className="text-2xl pl-4 lg:text-5xl lg:pl-52 w-full font-bold bg-blue-900 text-white px-5">
+						<div className="w-full flex justify-center ">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl text-center w-auto font-bold bg-blue-900 text-white">
 								Tubo LED T8
 							</h1>
 						</div>
 						<div className='w-full flex flex-col lg:flex-row'>
 							<div className="w-full lg:w-1/2 order-2 lg:order-1 pb-5 lg:py-10 flex flex-col items-center justify-center">
 								<div className='flex h-[300px]'>
-									<Image src={'/corpoImagenes/tuboled.JPG'}
+									<Image src={'/corpoImagenes/TuboLEDSinFondo.png'}
 										width={300}
 										height={200}
 										className='rounded-md'
@@ -424,8 +396,8 @@ export default function ProductList({ products }) {
 									<h1 className='text-center text-lg lg:text-2xl font-bold'>Capacidad</h1>
 								</div>
 								<div>
-									<p className='font-bold text-md lg:text-xl '>250W</p>
-									<p className='font-bold text-md lg:text-xl '>6500k</p>
+									<p className=' text-md lg:text-xl '>250W</p>
+									<p className=' text-md lg:text-xl '>6500k</p>
 								</div>
 								<div>
 									<p className='font-bold text-lg lg:text-2xl '>Garantía de 2 años</p>
@@ -437,21 +409,15 @@ export default function ProductList({ products }) {
 				}
 				{
 					product === 3 && <div className="w-full">
-						<div className="w-[300px] lg:w-1/2">
-							<h1 className="text-2xl pl-10 lg:text-5xl lg:pl-52 w-full font-bold bg-blue-900 text-white px-5">
-								Transformadores
+						<div className="w-full flex justify-center mb-10">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto text-center font-bold bg-blue-900 text-white px-5">
+								Transformadores Monofasico
 							</h1>
 						</div>
-						<div className="flex justify-end pr-10 lg:pr-52">
-							<h1 className=" text-2xl  lg:text-5xl lg:w-[500px] font-bold text-red-500 px-5">
-								Monofasico
-							</h1>
-						</div>
-
 						<div className='flex flex-col mb-10 lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
 							<div className='w-full order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
 								<div className=' h-1/2'>
-									<Image src={'/ImagesCadeteSiempre/transf003.jpeg'} className='w-full h-auto' width={400} height={150} />
+									<Image src={'/corpoImagenes/TransformadorMonofasicoSinFondo.png'} className='' width={400} height={150} alt='Imagen No Disponible' />
 								</div>
 							</div>
 							<div className='w-full order-1 lg:order-2 lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
@@ -478,20 +444,15 @@ export default function ProductList({ products }) {
 
 							</div>
 						</div>
-						<div className=" w-1/2">
-							<h1 className="text-2xl pl-10 lg:text-5xl lg:pl-52 w-full font-bold bg-blue-900 text-white px-5">
-								Monofasico
-							</h1>
-						</div>
-						<div className="flex justify-end pr-10 lg:pr-52">
-							<h1 className=" text-2xl  lg:text-5xl lg:w-[500px] font-bold text-red-500 px-5">
-								Sumergible
+						<div className=" w-full flex justify-center text-center">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								Monofasico Sumergible
 							</h1>
 						</div>
 						<div className='flex flex-col lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
 							<div className='w-full order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
 								<div className=' h-1/2'>
-									<Image src={'/corpoImagenes/transformadorsinfondo.png'} className='w-[400px] h-[400px]' width={400} height={150} />
+									<Image src={'/corpoImagenes/TansformadorMonofasicoSumergibleSinFondo.png'} className='w-[400px] h-[400px]' width={400} height={150} />
 								</div>
 							</div>
 							<div className='w-full order-1 lg:order-2 lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
@@ -512,20 +473,15 @@ export default function ProductList({ products }) {
 								</div>
 							</div>
 						</div>
-						<div className=" w-1/2">
-							<h1 className="text-2xl pl-10 lg:text-5xl lg:pl-52 w-full font-bold bg-blue-900 text-white px-5">
-								Trifasico
-							</h1>
-						</div>
-						<div className="flex justify-end pr-10 lg:pr-52">
-							<h1 className=" text-2xl  lg:text-5xl lg:w-[500px] font-bold text-red-500 px-5">
-								Sumergible
+						<div className=" w-full flex justify-center">
+							<h1 className="text-2xl px-10 uppercase  lg:text-4xl text-center  w-auto font-bold bg-blue-900 text-white">
+								Trifasico Sumergible
 							</h1>
 						</div>
 						<div className='flex flex-col lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
 							<div className='w-full order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
 								<div className=' h-1/2'>
-									<Image src={'/corpoImagenes/trifasicosumergiblesinfondo.png'} className='w-[400px] h-[350px]' width={400} height={150} />
+									<Image src={'/corpoImagenes/TransformadorTrifasicoSinFondo.png'} className='w-[400px] h-[350px]' width={400} height={150} />
 								</div>
 							</div>
 							<div className='w-full order-1 lg:order-2 lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
@@ -554,17 +510,11 @@ export default function ProductList({ products }) {
 				}
 				{
 					product === 2 && <div className="w-full">
-						<div className=" w-1/2">
-							<h1 className="text-2xl pl-10 lg:text-5xl lg:pl-52 w-full font-bold bg-blue-900 text-white px-5">
-								Energias
+						<div className=" w-full flex justify-center">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								Energias Renovables
 							</h1>
 						</div>
-						<div className="flex justify-end pr-10 lg:pr-52">
-							<h1 className=" text-2xl  lg:text-5xl lg:w-[500px] font-bold text-red-500 px-5">
-								Renovables
-							</h1>
-						</div>
-
 						<div className='flex flex-col lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
 							<div className='w-full order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
 								<Image src={'/corpoImagenes/panelsolarhorizontalsinfondo.png'} alt='' width={400} height={150} />

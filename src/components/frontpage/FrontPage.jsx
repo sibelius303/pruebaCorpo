@@ -285,11 +285,11 @@ export default function FrontPage() {
 					<div className='absolute h-80 lg:w-52 xl:w-52 top-24 lg:left-10  flex flex-col rounded-lg miDiv hover:miDivHover'>
 						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 							<Image
-								src={"/corpoImagenes/reflectorsinfondo.png"}
+								src={"/corpoImagenes/lamparaledsinfondo.png"}
 								alt="imagen de muestra"
-								className=" h-[75px] w-[75px] object-cover object-center"
-								width={100}
-								height={100}
+								className=" h-[150px] w-[150px] object-cover object-center"
+								width={200}
+								height={200}
 							/>
 						</div>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
@@ -302,9 +302,9 @@ export default function FrontPage() {
 							<Image
 								src={"/corpoImagenes/alumbradosinfondo.png"}
 								alt="imagen de muestra"
-								className=" h-[125px] w-[75px] object-cover object-center"
+								className=" h-[175px] w-[100px] object-cover object-center"
 								width={100}
-								height={100}
+								height={50}
 							/>
 						</div>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
@@ -317,7 +317,7 @@ export default function FrontPage() {
 							<Image
 								src={"/corpoImagenes/transformadorsinfondo.png"}
 								alt="imagen de muestra"
-								className=" h-[125px] w-[75px] object-cover object-center"
+								className=" h-[175px] w-[150px] object-cover object-center"
 								width={100}
 								height={100}
 							/>
@@ -334,7 +334,7 @@ export default function FrontPage() {
 							<Image
 								src={"/corpoImagenes/panelsinfondo.png"}
 								alt="imagen de muestra"
-								className=" h-[125px] w-[75px] object-cover object-center"
+								className=" h-[150px] w-[150px] object-cover object-center"
 								width={100}
 								height={100}
 							/>
@@ -358,7 +358,7 @@ export default function FrontPage() {
 							<p className='text-end'>Descubre mas</p>
 						</div>
 					</div>
-					<div  style={{ backgroundColor: '#65BCE0' }} className=''>
+					<div style={{ backgroundColor: '#65BCE0' }} className=''>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<div>
 								<h1 className='text-2xl font-bold'>Transformadores</h1>
