@@ -178,7 +178,7 @@ export default function ProductList() {
 			</div>
 			<div className="mt-20">
 				{
-					product === 0 && <div className="w-full">
+					product === 'Alumbrado Publico'  && <div className="w-full">
 						<div className=" flex justify-center w-full ">
 							<h1 className="text-2xl px-10 uppercase lg:text-4xl  w-auto font-bold bg-blue-900 text-white text-center">
 								Alumbrado Publico
@@ -280,7 +280,7 @@ export default function ProductList() {
 					</div>
 				}
 				{
-					product === 1 && <div>
+					product === 'LED' && <div>
 						<div className="w-full flex justify-center ">
 							<h1 className="text-2xl pl-10 uppercase lg:text-4xl w-auto text-center font-bold bg-blue-900 text-white px-5">
 								Luminarias LED
@@ -414,7 +414,7 @@ export default function ProductList() {
 					</div>
 				}
 				{
-					product === 3 && <div className="w-full">
+					product === 'Transformadores' && <div className="w-full">
 						<div className="w-full flex justify-center mb-10">
 							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto text-center font-bold bg-blue-900 text-white">
 								Transformadores Monofasico
@@ -515,7 +515,7 @@ export default function ProductList() {
 					</div>
 				}
 				{
-					product === 2 && <div className="w-full">
+					product === 'Energias Renovables' && <div className="w-full">
 						<div className=" w-full flex justify-center lg:my-10">
 							<h1 className="text-2xl  px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
 								Paneles Solares
