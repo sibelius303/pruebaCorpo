@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 
 
 export default function ProductList() {
-	const [product, setProduct] = useState(3);
+	const [product, setProduct] = useState('Transformadores');
 
 	useEffect(() => {
 		AOS.init({
@@ -149,19 +149,19 @@ export default function ProductList() {
 				</div>
 			</div>
 			<div style={{ backgroundColor: '#172168' }} className=' h-auto lg:h-96 w-full mt-10 lg:hidden lg:relative '>
-				<div onClick={() => setProduct(1)} style={{ backgroundColor: '#65BCE0' }} className=''>
+				<div onClick={() => setProduct('LED')} style={{ backgroundColor: '#65BCE0' }} className=''>
 					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 						<h1 className='text-2xl font-bold'>LED</h1>
 						<p className='text-end'>Descubre mas</p>
 					</div>
 				</div>
-				<div onClick={() => setProduct(0)} style={{ backgroundColor: '#65BCE0' }} className=''>
+				<div onClick={() => setProduct('Alumbrado Publico')} style={{ backgroundColor: '#65BCE0' }} className=''>
 					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 						<h1 className='text-2xl font-bold'>Alumbrado publico</h1>
 						<p className='text-end'>Descubre mas</p>
 					</div>
 				</div>
-				<div onClick={() => setProduct(3)} style={{ backgroundColor: '#65BCE0' }} className=''>
+				<div onClick={() => setProduct('Transformadores')} style={{ backgroundColor: '#65BCE0' }} className=''>
 					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 						<div>
 							<h1 className='text-2xl font-bold'>Transformadores</h1>
@@ -169,7 +169,7 @@ export default function ProductList() {
 						<p className='text-end'>Descubre mas</p>
 					</div>
 				</div>
-				<div onClick={() => setProduct(2)} style={{ backgroundColor: '#65BCE0' }} className=''>
+				<div onClick={() => setProduct('Energias Renovables')} style={{ backgroundColor: '#65BCE0' }} className=''>
 					<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 						<h1 className='text-2xl font-bold'>Energias Renovables</h1>
 						<p className='text-end'>Descubre mas</p>
