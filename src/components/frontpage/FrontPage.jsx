@@ -215,7 +215,7 @@ export default function FrontPage() {
 					</div>
 				</div>
 				<div style={{ backgroundColor: '#172168' }} className='h-96 hidden w-full mt-10 lg:block lg:relative '>
-					<div onClick={()=>router.push('/productos')} className='absolute h-80 lg:w-52 xl:w-52 top-24 lg:left-10  flex flex-col rounded-lg miDiv hover:miDivHover'>
+					<div onClick={()=>router.push('/productos/LED')} className='absolute h-80 lg:w-52 xl:w-52 top-24 lg:left-10  flex flex-col rounded-lg miDiv hover:miDivHover'>
 						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 							<Image
 								src={"/corpoImagenes/lamparaledsinfondo.png"}
@@ -230,7 +230,7 @@ export default function FrontPage() {
 							<p>Descubre mas</p>
 						</div>
 					</div>
-					<div onClick={()=>router.push('/productos')} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:left-72 xl:left-96 rounded-lg miDiv4 hover:miDivHover4'>
+					<div onClick={()=>router.push('/productos/AlumbradoPublico')} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:left-72 xl:left-96 rounded-lg miDiv4 hover:miDivHover4'>
 						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 							<Image
 								src={"/corpoImagenes/alumbradosinfondo.png"}
@@ -245,7 +245,7 @@ export default function FrontPage() {
 							<p>Descubre mas</p>
 						</div>
 					</div>
-					<div onClick={()=>router.push('/productos')} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:right-72 xl:right-96 rounded-lg miDiv2  hover:miDivHover2'>
+					<div onClick={()=>router.push('/productos/Transformadores')} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:right-72 xl:right-96 rounded-lg miDiv2  hover:miDivHover2'>
 						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 							<Image
 								src={"/corpoImagenes/transformadorsinfondo.png"}
@@ -262,7 +262,7 @@ export default function FrontPage() {
 							<p>Descubre mas</p>
 						</div>
 					</div>
-					<div onClick={()=>router.push('/productos')} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 miDiv3 hover:miDivHover3 lg:w-52 xl:w-64 top-24 lg:right-10 rounded-lg'>
+					<div onClick={()=>router.push('/productos/EnergiasRenovables')} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 miDiv3 hover:miDivHover3 lg:w-52 xl:w-64 top-24 lg:right-10 rounded-lg'>
 						<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 							<Image
 								src={"/corpoImagenes/panelsinfondo.png"}
@@ -279,19 +279,19 @@ export default function FrontPage() {
 					</div>
 				</div>
 				<div style={{ backgroundColor: '#172168' }} className=' h-auto lg:h-96 w-full mt-10 lg:hidden lg:relative '>
-					<div style={{ backgroundColor: '#65BCE0' }} className=''>
+					<div onClick={()=>router.push('/productos/LED')} style={{ backgroundColor: '#65BCE0' }} className=''>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<h1 className='text-2xl font-bold'>LED</h1>
 							<p className='text-end'>Descubre mas</p>
 						</div>
 					</div>
-					<div style={{ backgroundColor: '#65BCE0' }} className=''>
+					<div onClick={()=>router.push('/productos/AlumbradoPublico')} style={{ backgroundColor: '#65BCE0' }} className=''>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<h1 className='text-2xl font-bold'>Alumbrado publico</h1>
 							<p className='text-end'>Descubre mas</p>
 						</div>
 					</div>
-					<div style={{ backgroundColor: '#65BCE0' }} className=''>
+					<div onClick={()=>router.push('/productos/Transformadores')} style={{ backgroundColor: '#65BCE0' }} className=''>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<div>
 								<h1 className='text-2xl font-bold'>Transformadores</h1>
@@ -299,7 +299,7 @@ export default function FrontPage() {
 							<p className='text-end'>Descubre mas</p>
 						</div>
 					</div>
-					<div style={{ backgroundColor: '#65BCE0' }} className=''>
+					<div onClick={()=>router.push('/productos/EnergiasRenovables')} style={{ backgroundColor: '#65BCE0' }} className=''>
 						<div className='h-1/2 w-full text-white flex flex-col gap-5 justify-end p-5'>
 							<h1 className='text-2xl font-bold'>Energias Renovables</h1>
 							<p className='text-end'>Descubre mas</p>
