@@ -85,7 +85,7 @@ export default function ProductList() {
 				</div>
 			</div> */}
 			<div style={{ backgroundColor: '#172168' }} className='h-96 hidden w-full mt-10 lg:block lg:relative '>
-				<div onClick={() => setProduct(1)} className='absolute h-80 lg:w-52 xl:w-52 top-24 lg:left-10  flex flex-col rounded-lg miDiv hover:miDivHover'>
+				<div onClick={() => setProduct('LED')} className='absolute h-80 lg:w-52 xl:w-52 top-24 lg:left-10  flex flex-col rounded-lg miDiv hover:miDivHover'>
 					<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 						<Image
 							src={"/corpoImagenes/lamparaledsinfondo.png"}
@@ -100,7 +100,7 @@ export default function ProductList() {
 						<p>Descubre mas</p>
 					</div>
 				</div>
-				<div onClick={() => setProduct(0)} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:left-72 xl:left-96 rounded-lg miDiv4 hover:miDivHover4'>
+				<div onClick={() => setProduct('Alumbrado Publico')} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:left-72 xl:left-96 rounded-lg miDiv4 hover:miDivHover4'>
 					<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 						<Image
 							src={"/corpoImagenes/alumbradosinfondo.png"}
@@ -115,7 +115,7 @@ export default function ProductList() {
 						<p>Descubre mas</p>
 					</div>
 				</div>
-				<div onClick={() => setProduct(3)} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:right-72 xl:right-96 rounded-lg miDiv2  hover:miDivHover2'>
+				<div onClick={() => setProduct('Transformadores')} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 lg:w-52 xl:w-64 top-24 lg:right-72 xl:right-96 rounded-lg miDiv2  hover:miDivHover2'>
 					<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 						<Image
 							src={"/corpoImagenes/transformadorsinfondo.png"}
@@ -132,7 +132,7 @@ export default function ProductList() {
 						<p>Descubre mas</p>
 					</div>
 				</div>
-				<div onClick={() => setProduct(2)} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 miDiv3 hover:miDivHover3 lg:w-52 xl:w-64 top-24 lg:right-10 rounded-lg'>
+				<div onClick={() => setProduct('Energias Renovables')} style={{ backgroundColor: '#65BCE0' }} className='absolute h-80 miDiv3 hover:miDivHover3 lg:w-52 xl:w-64 top-24 lg:right-10 rounded-lg'>
 					<div className='h-1/2 w-full flex justify-end px-5 py-5'>
 						<Image
 							src={"/corpoImagenes/panelsinfondo.png"}

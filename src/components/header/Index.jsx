@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import ButtonCart from '../cart/ButtonCart';
 import MenuNav from './MenuNav';
 import Script from 'next/script';
 
