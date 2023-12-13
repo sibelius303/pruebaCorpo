@@ -1,6 +1,6 @@
 export const ROUTER_PATH = {
     HOME: '/',
-    PRODUCTS: '/productos',
+    PRODUCTS: '/productos/LED',
     PRODUCTS_BY_CATEGORY: (category)=>`/${category}/productos`,
     CHECKOUT: '/confirmar-compra',
     CHECKOUT_SHARED: '/confirmar-compra/${id}/pagar',
