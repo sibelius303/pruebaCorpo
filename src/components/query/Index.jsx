@@ -35,7 +35,7 @@ export default function Index({ data, error }) {
             </Card>
             <Card title="Diploma">
                 <div className="w-full max-h-64 overflow-y-hidden flex justify-center items-center">
-                    <Image src={sampleDiploma} width={600} height={100} />
+                    <Image src={sampleDiploma} width={600} height={100} alt=""/>
                 </div>
                 <div className="relative h-2 bottom-24 ">
                     <button className="bg-black bg-opacity-25 w-full py-10 text-white hover:bg-opacity-70">
@@ -58,7 +58,7 @@ export default function Index({ data, error }) {
             <div className="mt-5 m-2 mx-auto w-full md:w-8/12 flex flex-col gap-5 bg-white p-5">
                 <p className="text-center text-lg">Ingresa su numero de documento para hacer la consulta de su diploma</p>
                 <div className="w-full flex justify-center items-center">
-                    <Image src={sampleDiploma} width={300} height={100} />
+                    <Image src={sampleDiploma} width={300} height={100} alt=""/>
                 </div>
 
             </div>}

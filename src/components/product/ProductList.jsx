@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 import { useEffect, useState } from 'react';
 
 
-export default function ProductList({ products }) {
+export default function ProductList() {
 	const [product, setProduct] = useState(3);
 
 	useEffect(() => {
