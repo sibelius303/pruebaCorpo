@@ -25,13 +25,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
-import escudoArmada from '../../../public/ImagesCadeteSiempre/escudoArmada.png'
-import escudoGuardia from '../../../public/ImagesCadeteSiempre/guardiaNacionalEscudo.png'
-import escudoEjercito from '../../../public/ImagesCadeteSiempre/escudoEjercito.png'
-import escudoMilicia from '../../../public/ImagesCadeteSiempre/escudoMilicia.png'
-import escudoAviacion from '../../../public/ImagesCadeteSiempre/escudoAviacion.png'
 import { useRouter } from 'next/navigation'
-import AcademyComponent from './AcademyComponent'
 import { ROUTER_PATH } from '@/tools/constants'
 import ProductSlider from '../product/ProductSlider'
 import { products } from '../../tools/mockup/products.mockup'
@@ -114,67 +108,6 @@ const navigation = {
 	],
 }
 
-const categories = [
-	{
-		name: 'Fuerza Armada Bolivariana',
-		href: ROUTER_PATH.PRODUCTS,
-		imageSrc: escudoArmada
-		,
-	},
-	{
-		name: 'Guardia Nacional Bolivariana',
-		href: ROUTER_PATH.PRODUCTS,
-		imageSrc: escudoGuardia,
-	},
-	{
-		name: 'Ejercito Bolivariano',
-		href: ROUTER_PATH.PRODUCTS,
-		imageSrc: escudoEjercito,
-	},
-	{
-		name: 'Aviacion Militar Bolivariana',
-		href: ROUTER_PATH.PRODUCTS,
-		imageSrc: escudoAviacion,
-	},
-	{ name: 'Ejemplo', href: '/productos', imageSrc: escudoMilicia },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-	{ name: 'Ejemplo', href: '/productos', imageSrc: "/ImagesCadeteSiempre/imagen-de-prueba-320x240-1.jpg" },
-]
-
-const collections = [
-	{
-		name: 'Tarjetas',
-		href: '#',
-		imageSrc: "/tarjeta.jpeg",
-		imageAlt: 'PayPal Logo.',
-		description: 'Tarjeta de Credito/Debito.',
-	},
-	{
-		name: 'Transferencia',
-		href: '#',
-		imageSrc: "/transferencia.jpeg",
-		imageAlt: 'Binance.',
-		description: 'Transferencia Bancaria.',
-	},
-	{
-		name: 'Efectivo',
-		href: '#',
-		imageSrc: "/efectivo.png",
-		imageAlt: 'Skrill.',
-		description: 'Paga en nuestras oficinas al buscar tus productos',
-	},
-]
 const footerNavigation = {
 	shop: [
 		{ name: 'Bags', href: '#' },

@@ -292,7 +292,7 @@ export default function ProductList({ products }) {
 									<h1 className='text-2xl p-5  text-black text-center font-bold'>Bombillo Alta Tension</h1>
 									<div className='flex flex-col lg:flex-row w-full '>
 										<div className=' w-full order-2 lg:order-1 lg:w-1/2 p-2 h-[300px]'>
-											<Image src={'/corpoImagenes/BombilloAltaTensiónSinFondo.png'} className='w-full h-full' width={400} height={70} />
+											<Image src={'/corpoImagenes/BombilloAltaTensiónSinFondo.png'} className='w-full h-full' width={400} height={70} alt="imagen no disponible" />
 										</div>
 										<div className='w-full order-1 lg:order-2 lg:w-1/2 h-[300px] flex flex-col justify-between p-5 text-black rounded-lg '>
 											<h1 className=' text-lg font-bold text-center lg:text-xl'> Capacidad</h1>
@@ -315,7 +315,7 @@ export default function ProductList({ products }) {
 									<h1 className='text-2xl p-5  text-black text-center font-bold'>Bulbo LED</h1>
 									<div className='flex flex-col lg:flex-row w-full'>
 										<div className=' w-full order-2 lg:order-1 lg:w-1/2 p-2 h-[300px]'>
-											<Image src={'/corpoImagenes/BombilloLedSinFondo.png'} className='w-full h-full' width={400} height={70} />
+											<Image src={'/corpoImagenes/BombilloLedSinFondo.png'} className='w-full h-full' width={400} height={70} alt="imagen no disponible" />
 										</div>
 										<div className=' w-full order-1 lg:order-2 lg:w-1/2 h-[300px] p-5 lg:p-10 flex flex-col justify-between items-center text-black rounded-lg '>
 											<h1 className='text-lg font-bold lg:text-xl'> Capacidad</h1>
@@ -334,7 +334,7 @@ export default function ProductList({ products }) {
 									<h1 className='text-2xl p-5  text-black text-center font-bold'>Lampara Led</h1>
 									<div className='flex flex-col lg:flex-row w-full'>
 										<div className='w-full lg:w-1/2 order-2 lg:order-1 p-2 h-[300px]'>
-											<Image src={'/corpoImagenes/lamparaledsinfondo.png'} className='w-full h-full' width={400} height={70} />
+											<Image src={'/corpoImagenes/lamparaledsinfondo.png'} className='w-full h-full' width={400} height={70} alt="imagen no disponible"/>
 										</div>
 										<div className='w-full lg:w-1/2 order-1 lg:order-2 h-[300px] p-5 lg:p-10  flex flex-col justify-between items-center text-black rounded-lg '>
 											<h1 className='text-lg font-bold lg:text-xl'> Capacidad</h1>
@@ -416,7 +416,7 @@ export default function ProductList({ products }) {
 				{
 					product === 3 && <div className="w-full">
 						<div className="w-full flex justify-center mb-10">
-							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto text-center font-bold bg-blue-900 text-white px-5">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto text-center font-bold bg-blue-900 text-white">
 								Transformadores Monofasico
 							</h1>
 						</div>
@@ -458,7 +458,7 @@ export default function ProductList({ products }) {
 						<div className='flex flex-col lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
 							<div className='w-full order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
 								<div className=' h-1/2'>
-									<Image src={'/corpoImagenes/TansformadorMonofasicoSumergibleSinFondo.png'} className='w-[400px] h-[400px]' width={400} height={150} />
+									<Image src={'/corpoImagenes/TansformadorMonofasicoSumergibleSinFondo.png'} className='w-[400px] h-[400px]' width={400} height={150} alt="imagen no disponible"/>
 								</div>
 							</div>
 							<div className='w-full order-1 lg:order-2 lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
@@ -486,7 +486,7 @@ export default function ProductList({ products }) {
 						<div className='flex flex-col lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
 							<div className='w-full order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
 								<div className=' h-1/2'>
-									<Image src={'/corpoImagenes/TransformadorTrifasicoSinFondo.png'} className='w-[400px] h-[350px]' width={400} height={150} />
+									<Image src={'/corpoImagenes/TransformadorTrifasicoSinFondo.png'} className='w-[400px] h-[350px]' width={400} height={150} alt="imagen no disponible"/>
 								</div>
 							</div>
 							<div className='w-full order-1 lg:order-2 lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
