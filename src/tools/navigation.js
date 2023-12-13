@@ -11,5 +11,4 @@ export const secondaryNavigation = [
     { name:'Pagar', href:ROUTER_PATH.PRODUCTS, className:"hidden text-xs font-bold    text-black lg:block" },
     { name:'Ingresar', href:ROUTER_PATH.PRODUCTS, className:"hidden text-xs font-bold    text-black lg:block" },
     { name:'Catalogo', href:ROUTER_PATH.PRODUCTS, className:"hidden text-xs font-bold    text-black lg:block" },
-    { name:'Noticias', href:ROUTER_PATH.PRODUCTS, className:"hidden text-xs font-bold    text-black lg:block" },
 ]
