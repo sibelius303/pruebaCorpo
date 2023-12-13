@@ -296,7 +296,12 @@ export default function ProductList({ products }) {
 										</div>
 										<div className='w-full order-1 lg:order-2 lg:w-1/2 h-[300px] flex flex-col justify-between p-5 text-black rounded-lg '>
 											<h1 className=' text-lg font-bold text-center lg:text-xl'> Capacidad</h1>
-											<div className=' text-md text-center lg:text-xl'>
+											<div className=' text-md grid grid-cols-2 text-center lg:text-xl'>
+												<p>20W</p>
+												<p>30W</p>
+												<p>40W</p>
+												<p>50W</p>
+												<p>70W</p>
 												<p>100W</p>
 												<p>150W</p>
 												<p>200W</p>
@@ -315,11 +320,10 @@ export default function ProductList({ products }) {
 										<div className=' w-full order-1 lg:order-2 lg:w-1/2 h-[300px] p-5 lg:p-10 flex flex-col justify-between items-center text-black rounded-lg '>
 											<h1 className='text-lg font-bold lg:text-xl'> Capacidad</h1>
 											<div className='text-md lg:text-xl'>
-												<p>100W</p>
-												<p>150W</p>
-												<p>200W</p>
+												<p>9W</p>
+												<p>12W</p>
 											</div>
-											<h1 className='text-lg font-bold'>3 años de Garantia</h1>
+											<h1 className='text-lg font-bold'></h1>
 										</div>
 									</div>
 								</div>
@@ -335,11 +339,9 @@ export default function ProductList({ products }) {
 										<div className='w-full lg:w-1/2 order-1 lg:order-2 h-[300px] p-5 lg:p-10  flex flex-col justify-between items-center text-black rounded-lg '>
 											<h1 className='text-lg font-bold lg:text-xl'> Capacidad</h1>
 											<div className='text-md lg:text-xl'>
-												<p>100W</p>
-												<p>150W</p>
-												<p>200W</p>
+												<p>10W</p>
 											</div>
-											<h1 className='text-lg font-bold'>3 años de Garantia</h1>
+											<h1 className='text-lg font-bold'></h1>
 										</div>
 									</div>
 								</div>
@@ -356,11 +358,16 @@ export default function ProductList({ products }) {
 										<h1 className='text-center text-lg lg:text-2xl font-bold'>Capacidad</h1>
 									</div>
 									<div>
-										<p className='text-md lg:text-xl '>250W</p>
-										<p className=' text-md lg:text-xl '>6500k</p>
+										<p className='text-md lg:text-xl '>150W</p>
+										<p className='text-md lg:text-xl '>200W</p>
+										<p className='text-md lg:text-xl '>300W</p>
+										<p className='text-md lg:text-xl '>400W</p>
+										<p className='text-md lg:text-xl '>600W</p>
+										<p className='text-md lg:text-xl '>800W</p>
+										<p className='text-md lg:text-xl '>1000W</p>
 									</div>
 									<div>
-										<p className='font-bold text-lg lg:text-2xl '>Garantía de 2 años</p>
+										<p className='font-bold text-lg lg:text-2xl '>Garantía de 5 años</p>
 									</div>
 								</div>
 								<div className="w-full lg:w-1/2 pb-5 lg:py-10 flex flex-col items-center justify-center">
@@ -396,12 +403,11 @@ export default function ProductList({ products }) {
 									<h1 className='text-center text-lg lg:text-2xl font-bold'>Capacidad</h1>
 								</div>
 								<div>
-									<p className=' text-md lg:text-xl '>250W</p>
-									<p className=' text-md lg:text-xl '>6500k</p>
+									<p className=' text-md lg:text-xl '>9W</p>
+									<p className=' text-md lg:text-xl '>18w</p>
 								</div>
 								<div>
-									<p className='font-bold text-lg lg:text-2xl '>Garantía de 2 años</p>
-									<p className='font-bold text-lg lg:text-2xl '>¡No incluye base!</p>
+									<p className='font-bold text-lg lg:text-2xl '></p>
 								</div>
 							</div>
 						</div>
@@ -433,13 +439,13 @@ export default function ProductList({ products }) {
 								</p>
 								<h1 className="text-xl font-bold mb-4 text-center mt-2 ">Capacidades</h1>
 								<div className='grid grid-cols-2 gap-4 p-4'>
-									<p className='text-center'>10 KVA</p>
-									<p className='text-center'>15 KVA</p>
-									<p className='text-center'>25 KVA</p>
-									<p className='text-center'>37.5 KVA</p>
-									<p className='text-center'>50 KVA</p>
-									<p className='text-center'>75 KVA</p>
-									<p className='text-center'>100 KVA</p>
+									<p className='px-4 text-md lg:text-lg '>TX&#39;S Monofásico 10 KVA Distribución</p>
+									<p className='px-4 text-md lg:text-lg '>TX&#39;S Monofásico 15 KVA Distribución</p>
+									<p className='px-4 text-md lg:text-lg '>TX&#39;S Monofásico 25 KVA Distribución</p>
+									<p className='px-4 text-md lg:text-lg '>TX&#39;S Monofásico 37.5 KVA Distribución</p>
+									<p className='px-4 text-md lg:text-lg '>TX&#39;S Monofásico 50 KVA Distribución</p>
+									<p className='px-4 text-md lg:text-lg '>TX&#39;S Monofásico 75 KVA Distribución</p>
+									<p className='px-4 text-md lg:text-lg '>TX&#39;S Monofásico 100 KVA Distribución</p>
 								</div>
 
 							</div>
@@ -465,11 +471,10 @@ export default function ProductList({ products }) {
 								</p>
 								<h1 className="text-xl font-bold mb-4 text-center mt-2 ">Capacidades</h1>
 								<div className='grid grid-cols-2 gap-4 p-4'>
-									<p className='text-center'>550 KVA</p>
-									<p className='text-center'>333 KVA</p>
-									<p className='text-center'>250 KVA</p>
-									<p className='text-center'>167.5 KVA</p>
-									<p className='text-center'>100 KVA</p>
+									<p className='text-center lg:text-lg'>TX&#39;S 1F Sumergible 167.5 KVA Distribución</p>
+									<p className='text-center lg:text-lg'>TX&#39;S 1F Sumergible 250 KVA Distribución</p>
+									<p className='text-center lg:text-lg'>TX&#39;S 1F Sumergible 333 KVA Distribución</p>
+									<p className='text-center lg:text-lg'>TX&#39;S 1F Sumergible 500 KVA Distribución</p>
 								</div>
 							</div>
 						</div>
@@ -497,11 +502,12 @@ export default function ProductList({ products }) {
 								<div className=' p-5'>
 									<h1 className="text-xl font-bold mb-4 text-center mt-2 ">Capacidades</h1>
 									<div className='grid grid-cols-2 gap-4 p-4'>
-										<p className='text-center'>550 KVA</p>
-										<p className='text-center'>333 KVA</p>
-										<p className='text-center'>250 KVA</p>
-										<p className='text-center'>167.5 KVA</p>
-										<p className='text-center'>100 KVA</p>
+										<p className='text-center'>TX&#39;S 3F Sumergible 150 KVA Distribución</p>
+										<p className='text-center'>TX&#39;S 3F Sumergible 300 KVA Distribución</p>
+										<p className='text-center'>TX&#39;S 3F Sumergible 500 KVA Distribución</p>
+										<p className='text-center'>TX&#39;S 3F Sumergible 750 KVA Distribución</p>
+										<p className='text-center'>TX&#39;S 3F Sumergible 1000 KVA Distribución</p>
+										<p className='text-center'>TX&#39;S 3F Sumergible 1500 KVA Distribución</p>
 									</div>
 								</div>
 							</div>
@@ -510,18 +516,18 @@ export default function ProductList({ products }) {
 				}
 				{
 					product === 2 && <div className="w-full">
-						<div className=" w-full flex justify-center">
-							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
-								Energias Renovables
+						<div className=" w-full flex justify-center lg:my-10">
+							<h1 className="text-2xl  px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								Paneles Solares
 							</h1>
 						</div>
 						<div className='flex flex-col lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
 							<div className='w-full order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
-								<Image src={'/corpoImagenes/panelsolarhorizontalsinfondo.png'} alt='' width={400} height={150} />
+								<Image src={'/corpoImagenes/PanelesSolaresSinFondo.png'} alt='' width={400} height={150} />
 							</div>
 							<div className='w-full order-1 lg:order-2 lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
-								<h1 className="text-lg my-10 lg:text-2xl font-bold lg:mb-10 lg:mt-20 text-center   ">Paneles Solares</h1>
-								<p className='px-4 text-md lg:text-xl font-bold '>
+								<h1 className="text-lg my-10 lg:text-xl font-bold lg:mb-10 lg:mt-20 text-center   ">Paneles Solares</h1>
+								<p className='px-4 text-md lg:text-lg  '>
 									Los paneles solares son módulos fotovoltaicos
 									individuales que captan la energía que
 									proporciona el sol convirtiéndola en electricidad.
@@ -530,13 +536,27 @@ export default function ProductList({ products }) {
 									materiales semiconductores como el silicio, que
 									transforman la luz en energía eléctrica.
 								</p>
+								<div className=' p-5'>
+									<h1 className="text-xl font-bold mb-4 text-center mt-2 ">Capacidades</h1>
+									<div className='grid grid-cols-2 gap-4 p-4'>
+										<p className='text-center'>POLY - MONOCRISTALINO -150 Wp ± 5 %</p>
+										<p className='text-center'>43.2v 72 celdas -180 Wp ± 5 %</p>
+										<p className='text-center'>44.68v 72 celdas -195 Wp ± 5 %</p>
+										<p className='text-center'>30.46v 48 celdas</p>
+									</div>
+								</div>
 							</div>
-						</div>
 
+						</div>
+						<div className=" w-full flex justify-center lg:my-10">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								Aerogeneradores
+							</h1>
+						</div>
 						<div className='flex flex-col lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
-							<div className='w-full  lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
-								<h1 className="text-lg my-10 lg:text-2xl font-bold lg:mb-10 lg:mt-20 text-center">Aerogeneradores</h1>
-								<p className='px-4 text-md lg:text-xl font-bold '>
+							<div className='w-full p-5  lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
+								<h1 className="text-lg my-10 lg:text-xl font-bold lg:mb-10 lg:mt-20 text-center">Aerogeneradores</h1>
+								<p className='px-4 text-md lg:text-lg '>
 									Los aerogeneradores son una forma de energía
 									sostenible capaces de convertir la energía del
 									viento en electricidad. La principal materia prima
@@ -545,9 +565,173 @@ export default function ProductList({ products }) {
 									producción sostenida de electricidad con ayuda de
 									otros componentes.
 								</p>
+								<div className=' p-5'>
+									<h1 className="text-xl font-bold mb-4 text-center mt-2 ">Capacidades</h1>
+									<div className='grid grid-cols-2 gap-4 p-4'>
+										<p className='text-center'>ABP-1500W/24V – 2 Helices</p>
+										<p className='text-center'>ABP-3000W/24V – 2 Helices</p>
+										<p className='text-center'>ABP-6000W/24V – 3 Helices</p>
+									</div>
+								</div>
 							</div>
 							<div className='w-full h-1/2 lg:w-1/2 lg:h-fit flex flex-col  items-center gap-2'>
-								<Image src={'/corpoImagenes/aerogeneradorsinfondo.png'} alt='' width={400} height={150} />
+								<Image src={'/corpoImagenes/Aereogenerador.png'} alt='' width={400} height={150} />
+							</div>
+
+						</div>
+						<div className=" w-full flex justify-center lg:my-10">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								Power Core
+							</h1>
+						</div>
+						<div className='flex w-full flex-col lg:flex-row  h-auto  overflow-hidden justify-center'>
+							<div className='w-1/2 order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
+								<Image src={'/corpoImagenes/PowerCoreSinFondo.png'} alt='' width={400} height={150} />
+							</div>
+							<div className='w-1/2 order-1 lg:order-2 lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
+								<h1 className="text-lg my-10 lg:text-xl font-bold lg:mb-10 lg:mt-20 text-center   ">Power Core</h1>
+								<div className=' p-5'>
+									<h1 className="text-xl font-bold mb-4 text-center mt-2 ">Capacidades</h1>
+									<div className='grid grid-cols-2 gap-4 p-4'>
+										<p className='text-center'>700W</p>
+										<p className='text-center'>1000W</p>
+										<p className='text-center'>2000W</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div className=" w-full flex justify-center lg:my-10">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								INVERSORES
+							</h1>
+						</div>
+						<div className='flex flex-col lg:flex-row w-full h-auto  overflow-hidden justify-center'>
+							<div className='w-full p-5  lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
+								<h1 className="text-lg my-10 lg:text-xl font-bold lg:mb-10 lg:mt-20 text-center">Inversores Cargadores</h1>
+								<p className='px-4 text-md lg:text-lg '> Potencias Disponibles desde 3kw hasta 60kw en 24V/48V
+								</p>
+								<p className='px-4 text-md lg:text-lg '>Carga de Bateria de Acido, Gel y Litio</p>
+							</div>
+							<div className='w-full h-1/2 lg:w-1/2 lg:h-fit flex flex-col  items-center gap-2'>
+								<Image src={'/corpoImagenes/InversorCargadorSinFondo.png'} alt='' width={400} height={150} />
+							</div>
+						</div>
+						<div className='flex flex-col lg:flex-row w-full h-auto  overflow-hidden justify-center'>
+							<div className='w-full order-2 lg:order-1 h-1/2 lg:w-1/2 lg:h-fit flex flex-col  items-center gap-2'>
+								<Image className="h-[350px]" src={'/corpoImagenes/InversorHibridoSinFondo.png'} alt='' width={400} height={75} />
+							</div>
+							<div className='w-full p-5 order-1 lg:order-2 lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
+								<h1 className="text-lg my-10 lg:text-xl font-bold lg:mb-10 lg:mt-20 text-center">Inversores Hibridos</h1>
+								<p className='px-4 text-md lg:text-lg '> Potencias Disponibles desde 3kw hasta 60kw en 24V/48V
+								</p>
+								<p className='px-4 text-md lg:text-lg '>Carga de Bateria de Acido, Gel y Litio</p>
+							</div>
+						</div>
+						<div className=" w-full flex justify-center lg:my-10">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								Baterias
+							</h1>
+						</div>
+						<div className='flex flex-col lg:flex-row w-full h-auto  overflow-hidden justify-center'>
+							<div className='w-full p-5  lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
+								<h1 className="text-lg my-10 lg:text-xl font-bold lg:mb-10 lg:mt-20 text-center">BATERÍA DE FERROFOSFATO DE LITIO (lifepo4)</h1>
+								<div className=' p-5'>
+									<h1 className="text-xl font-bold mb-4 text-center mt-2 ">Capacidades de Almacenamiento</h1>
+									<div className='grid grid-cols-2 gap-4 p-4'>
+										<p className='text-center'>12V: 50Ah HASTA 100 Ah</p>
+										<p className='text-center'>48V: 50 Ah HASTA 450Ah</p>
+										<p className='text-center'><b>Ciclos:</b> 3000 HASTA 8000 (20 AÑOS)</p>
+										<p className='text-center'><b>ESCALABILIDAD:</b>HASTA 18 EN PARALELO</p>
+									</div>
+								</div>
+							</div>
+							<div className='w-full h-1/2 lg:w-1/2 lg:h-fit flex flex-col  items-center gap-2'>
+								<Image src={'/corpoImagenes/ferrofosfatodelitioSinFondo.png'} alt='' width={400} height={150} />
+							</div>
+						</div>
+						<div className='flex flex-col lg:flex-row w-full h-auto  overflow-hidden justify-center'>
+							<div className='w-full order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
+								<Image src={'/corpoImagenes/BateriaDeGelSinFondo.png'} alt='' width={400} height={150} />
+							</div>
+							<div className='w-full order-1 lg:order-2 lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
+								<h1 className="text-lg my-10 lg:text-xl font-bold lg:mb-10 lg:mt-20 text-center">BATERIAS GEL 12V</h1>
+								<div className=' p-5'>
+									<h1 className="text-xl font-bold mb-4 text-center mt-2 ">Capacidades de Almacenamiento</h1>
+									<div className='grid grid-cols-2 gap-4 p-4'>
+										<p className='text-center'>50Ah HASTA 200Ah</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div className=" w-full flex justify-center lg:my-10">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								Bomba Solar de Agua
+							</h1>
+						</div>
+						<div className='flex flex-col lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
+							<div className='w-full p-5  lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
+								<h1 className="text-lg my-10 lg:text-xl font-bold lg:mb-10 lg:mt-20 text-center">Bomba Solar de Agua</h1>
+								<p className='px-4 text-md lg:text-lg '>
+									El modelo S1-200 de LORENTZ, es totalmente portátil, lo que
+									permite su uso en diferentes aplicaciones. La bomba sumergible de
+									rotor helicoidal puede ser utilizada en un pozo de 4, puede bombear
+									agua de un tanque, estanque o arrollo. El mini controlador de la
+									bomba tiene todas las entradas necesarias para cumplir con
+									cualquier aplicación. Puede bombear más de 26m³ por día
+									manejando arreglos fotovoltaicos de hasta 400Wp, o bombear hasta
+									40m verticalmente.
+								</p>
+							</div>
+							<div className='w-full h-1/2 lg:w-1/2 lg:h-fit flex flex-col  items-center gap-2'>
+								<Image src={'/corpoImagenes/BombaSolarSinFondo.png'} alt='' width={400} height={150} />
+							</div>
+
+						</div>
+						<div className=" w-full flex justify-center lg:my-10">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								PLANTA DESALINIZADORA
+							</h1>
+						</div>
+						<div className='flex flex-col lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
+							<div className='w-full order-2 lg:order-1 lg:w-1/2 h-fit flex flex-col  items-center gap-2'>
+								<Image src={'/corpoImagenes/PlantaDesalinizadoraSinFondo.png'} alt='' width={400} height={150} />
+							</div>
+							<div className='w-full order-1 lg:order-2 lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
+								<h1 className="text-lg my-10 lg:text-xl font-bold lg:mb-10 lg:mt-20 text-center   ">Planta Desalinizadora</h1>
+								<p className='px-4 text-md lg:text-lg  '>
+									Sistemas de potabilización de agua salada y salobre, auto
+									sustentada con energía solar. Diversidad de configuraciones que
+									garantizan generación de agua potable desde 300L/día así como
+									300.000L/día según sea la necesidad del usuario. Operación
+									autónoma que puede ser supervisada a distancia mediante
+									interconexión con sistemas vía web. Solución de ósmosis inversa
+									con mención especial en los mejores inventos de 2020 de la revista
+									TIME y calidad de agua aprobada por la OMS
+								</p>
+							</div>
+						</div>
+						<div className=" w-full flex justify-center lg:my-10">
+							<h1 className="text-2xl px-10 uppercase lg:text-4xl w-auto font-bold bg-blue-900 text-white">
+								CALENTADOR DE AGUA SOLAR
+							</h1>
+						</div>
+						<div className='flex flex-col lg:flex-row w-fit h-auto  overflow-hidden justify-center'>
+							<div className='w-full p-5  lg:w-1/2 mx-0 px-0 h-auto flex flex-col items-center justify-center  text-black '>
+								<h1 className="text-lg my-10 lg:text-xl font-bold lg:mb-10 lg:mt-20 text-center">Calentador de Agua Solar</h1>
+								<p className='px-4 text-md lg:text-lg '>
+									Dispositivo que utiliza la energía solar que llega a la superficie
+									terrestre en forma de radiación, para calentar agua. Disminuye el
+									consumo energético hasta un 50% lo que lo hace una opción de
+									ahorro eléctrico absolutamente rentable. Su eficiencia alcance
+									importantes porcentajes, tales como que sus tubos de vacío solares
+									conviertan un 80% de radiación en energía térmica, lo que se
+									convierte en agua caliente gratis gracias al astro rey, el sol.
+								</p>
+							</div>
+							<div className='w-full h-1/2 lg:w-1/2 lg:h-fit flex flex-col  items-center gap-2'>
+								<Image src={'/corpoImagenes/CalentadorSolarSinFondo.png'} alt='' width={400} height={150} />
 							</div>
 
 						</div>
@@ -555,6 +739,6 @@ export default function ProductList({ products }) {
 				}
 
 			</div>
-		</div>
+		</div >
 	)
 }
