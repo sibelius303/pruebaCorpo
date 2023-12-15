@@ -1,6 +1,0 @@
-div.content p {
-    @apply inline-flex flex-wrap gap-2 my-2;
-}
-div.content img {
-    @apply shadow shadow-black !w-[200px] !h-[200px] mx-5;
-}
