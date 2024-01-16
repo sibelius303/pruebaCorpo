@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
 
 				<div className='h-48 grid grid-cols-2 lg:hidden items-center justify-around'>
 					<div className='flex items-center justify-center'>
-						<Image src={'/mppee.png'} width={100} height={100} alt='imagen no disponible' />
+						<Image src={'/MPPEE.jpg'} width={100} height={100} alt='imagen no disponible' />
 					</div>
 					<div className='flex items-center justify-center'>
 						<Image src={'/logosinfondo.png'} width={125} height={125} alt='imagen no disponible' />
