@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
 						estiloCintilloGris
 					} className="flex w-full items-center justify-between">
 						<div className='w-full py-5 hidden lg:flex items-center justify-around'>
-							<Image src={'/mppee.png'} width={200} height={50} alt='imagen no disponible' />
+							<Image src={'/mppee.png'} width={200} height={100} alt='imagen no disponible' />
 							<Image src={'/logosinfondo.png'} width={250} height={250} alt='imagen no disponible' />
 							<Image src={'/corpoImagenes/unervensinfondorecortada.png'} width={200} height={50} alt='imagen no disponible' />
 							<Image src={'/corpoImagenes/vietvensinfondorecortada.png'} width={200} height={50} alt='imagen no disponible' />
