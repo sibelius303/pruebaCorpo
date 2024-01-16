@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
- /* :root {
+:root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -10,13 +10,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
-body {
+.slick-arrow::before {
+  color: black;
+}
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +27,81 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}  */
+} */
+
+
+.miDiv {
+  @apply w-64 h-80 bg-gray-300 transition duration-700 ease-in;
+  background-color: #65BCE0;
+  /* background-image: url('ruta/de/tu/imagen-original.jpg');
+  background-size: cover; */
+}
+
+.hover\:miDivHover:hover {
+  @apply bg-gray-600 transition duration-700 ease-in transform scale-y-110;
+  background-image: url('../../public/imagenledPage.jpg');
+  background-size: cover;
+}
+
+.miDivCatTelefono {
+  @apply bg-gray-600;
+  background-image: url('../../public/imagenledPage.jpg');
+  background-size: cover;
+}
+
+.miDiv2 {
+  @apply w-64 h-80 bg-gray-300 transition duration-700 ease-in;
+  background-color: #65BCE0;
+  /* background-image: url('ruta/de/tu/imagen-original.jpg');
+  background-size: cover; */
+}
+
+.hover\:miDivHover2:hover {
+  @apply bg-gray-600 transition duration-700 ease-in transform scale-y-110;
+  background-image: url('../../public/corpoImagenes/transformadormonofasico.jpeg');
+  background-size: cover;
+}
+
+.miDivCatTelefono2 {
+  @apply bg-gray-600;
+  background-image: url('../../public/corpoImagenes/transformadormonofasico.jpeg');
+  background-size: cover;
+}
+
+.miDiv3 {
+  @apply w-64 h-80 bg-gray-300 transition duration-700 ease-in;
+  background-color: #65BCE0;
+  /* background-image: url('ruta/de/tu/imagen-original.jpg');
+  background-size: cover; */
+}
+
+.hover\:miDivHover3:hover {
+  @apply bg-gray-600 transition duration-700 ease-in transform scale-y-110;
+  background-image: url('../../public/imagenpanelPage.jpg');
+  background-size: cover;
+}
+
+.miDivCatTelefono3 {
+  @apply bg-gray-600;
+  background-image: url('../../public/imagenpanelPage.jpg');
+  background-size: cover;
+}
+
+.miDiv4 {
+  @apply w-64 h-80 bg-gray-300 transition duration-700 ease-in;
+  background-color: #65BCE0;
+  /* background-image: url('ruta/de/tu/imagen-original.jpg');
+  background-size: cover; */
+}
+
+.hover\:miDivHover4:hover {
+  @apply bg-gray-600 transition duration-700 ease-in transform scale-y-110;
+  background-image: url('../../public/iamgenalumbradoPage.jpg');
+  background-size: cover;
+}
+
+.miDivCatTelefono4 {
+  @apply bg-gray-600;
+  background-image: url('../../public/iamgenalumbradoPage.jpg');
+  background-size: cover;
+}

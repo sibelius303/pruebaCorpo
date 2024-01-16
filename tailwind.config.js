@@ -8,17 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'negro': '#231f20',
-        'Pantone562': '#007366',
-        'Pantone499': '#6c3231',
-        'BlancoIvory': '#fffdf0',
-        'Cobre': '#f29464',
-        'Gris': '#ededed',
-        'GrisFondo': '#f5f5f5',
-        'Verde': '#4ED03B',
-        'Rojo': '#FF0000',
-        'rojo-pantone': '#8C2226',
-        'azul-pantone': '#1B103B'
+        rojoPantone: '#8C2226',
+        azulPantone: '#1157CE',
+        fondo: '#000028'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -27,5 +19,5 @@ module.exports = {
       },
     },
   },
-  plugins: [  require('@tailwindcss/forms'), require('tailwind-scrollbar')],
+  plugins: [],
 }

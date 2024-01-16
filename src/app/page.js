@@ -1,13 +1,9 @@
-import Login from '@/components/login/Login'
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import FrontPage from '@/components/frontpage/FrontPage'
 
-export default function page() {
+export default function Home() {
   return (
-    <div className=''>
-      <Login />
-      <ToastContainer/>
-    </div>
-
+    <main className="flex min-h-screen flex-col">
+      <FrontPage />
+    </main>
   )
 }

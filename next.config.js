@@ -1,21 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     env: {
-        //https://www.lightsoftwareca.com/app/corpoelec/admin/prod/api
-        //R3pKSTV4UkFTdjhKZHQvOFlEVzNOSmViSmpyZHNFTUIxSzZRN0hjPQ==
-        API_URL: "https://www.lightsoftwareca.com/app/corpoelec/admin/qa/api",
-        APIQA_URL: "https://www.lightsoftwareca.com/app/lightpos/qa/api",
-        TOKEN_PROD:"R2lGYjd3RkxTK3dSYmR6dlFCeTBKTy9oWHMveFNZbVozVkF4",
-        TOKEN_QA:"R2lGYjd3RkxTK3dSYmR6dlFCeTBKTy9oWHMveFNZbVozVkF4",
-        NOT_IMAGE: "/imagenNoDisponible.png"
+        DB_URI: "mongodb://localhost:27017/ecommercev1",
+        API_URL: "http://localhost:3000/api",
+        LINK_WHATSAPP: "https://wa.me/00000"
     },
     images: {
-      domains: ['www.lightsoftwareca.com','detallesorballo.com'],
+        // remotePatterns: [{ protocol: "https:", hostname: "**" }],
+        domains: ["localhost", "fastly.picsum.photos", "picsum.photos", "tailwindui.com", "detallesorballo.com","www.lightsoftwareca.com"],
     },
     experimental: {
-        appDir: true,
-        serverActions: true
-    },
-  };
-  
-  module.exports = nextConfig;
+        serverActions: true,
+    }
+}
+
+module.exports = nextConfig
